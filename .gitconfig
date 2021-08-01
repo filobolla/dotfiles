@@ -6,3 +6,5 @@
 [user]
 	name = Filippo Bollarino
 	email = 13319932+filobolla@users.noreply.github.com
+[core]
+	excludesfile = /Users/Filippo/.config/git/ignore
