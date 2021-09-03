@@ -28,6 +28,8 @@ brew "fdupes"
 brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
@@ -94,6 +96,8 @@ cask "dbeaver-community"
 cask "dupeguru"
 # Web browser
 cask "firefox"
+# Free and open-source media player
+cask "iina"
 # Password manager compatible with KeePass
 cask "keeweb"
 # Audio tagger focusing on efficiency
@@ -114,7 +118,7 @@ cask "onyx"
 cask "qlcolorcode"
 cask "scidavis"
 # Configurable document editor that supports Markdown
-cask "typora"
+cask "typora" 
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -125,10 +129,8 @@ cask "wine-stable"
 cask "wireshark"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
-mas "123D Design", id: 566042322
 mas "Apple Configurator 2", id: 1037126344
 mas "Bitwarden", id: 1352778147
-mas "Duplicate File Finder", id: 1032755628
 mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
