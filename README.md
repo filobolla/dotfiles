@@ -40,4 +40,4 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - VirtualDJ + Hercules drivers
 
 ## Resources
-- Lars Klappert's dotfiles and MakeFile-style structure https://github.com/webpro/dotfiles/blob/master/macos/defaults.sh
+- Lars Kappert's dotfiles and MakeFile-style structure https://github.com/webpro/dotfiles/blob/master/macos/defaults.sh
