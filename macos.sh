@@ -7,6 +7,7 @@
 #
 #
 
+COMPUTER_NAME="MacBookPro-Filo"
 # Close any open System Preferences, to prevent overrindig changes of this script
 osascript -e 'tell application "System Preferences" to quit'                                 
 # Ask for administrator password upfront
@@ -19,6 +20,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+# Set machine hostname and SMB discovery name
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+sudo scutil --set HostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 # Set sidebar icon size to small (1:small (default in <10.15), 2:medium (Catalina default), 3:big)
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
