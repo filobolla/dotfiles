@@ -18,6 +18,8 @@ brew "tcl-tk"
 brew "cairo"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Tool for managing dock items
+brew "dockutil"
 # Run arbitrary commands when files change
 brew "entr"
 # Perl lib for reading and writing EXIF metadata
@@ -84,8 +86,6 @@ cask "appcleaner"
 cask "arduino"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Virtual Audio Driver
-cask "blackhole-16ch"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Disk space visualizer
@@ -114,11 +114,12 @@ cask "notion"
 cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+cask "parsec"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 cask "scidavis"
 # Configurable document editor that supports Markdown
-cask "typora" 
+cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
