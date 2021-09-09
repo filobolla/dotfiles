@@ -5,6 +5,7 @@
 "   \_/ |_|_| |_| |_|_|  \___|
 "
 
+set nocompatible
 " Syntax highlight
 syntax on
 " Set relative numbering to ease vim movements
@@ -12,4 +13,12 @@ set number relativenumber
 " Enchance command-line completion
 set wildmode=longest,list,full
 set wildmenu
+" Show the key combination being typed
 set showcmd
+" Ignore case of searches
+set ignorecase
+" Highlight searches
+set hlsearch
+" Show cursor position
+set ruler
+
