@@ -39,5 +39,10 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
 
-## Resources
-- Lars Kappert's dotfiles and MakeFile-style structure https://github.com/webpro/dotfiles/blob/master/macos/defaults.sh
+## TODO
+- Make this install idempotent
+- Make these dotfiles cross-platform (macOS and Linux)
+## Thanks to
+- Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 
+- Lars Kappert's dotfiles and `dockutil` usage https://github.com/webpro/dotfiles
+
