@@ -12,7 +12,8 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Set `bash` as default shell (10.15+)
 - Export network positions
 - Setup `brew` env variables (see `man brew`)
-- Export Folder Actrions and Services
+- Export Folder Actions and Services
+- Backup security and privacy options
 ### Finder
 - Add "Remote Connection" and "Path" buttons in Finder
 - Show Library folder
@@ -29,6 +30,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 ### Other
 - Export Karabiner-Elements profile
 - Setup OpenVPN connections
+- Backup Brave/Chromium extension and bookmarks with [Chrome-Bookmark-Parser](https://github.com/DavidMetcalfe/Chrome-Bookmarks-Parser/)
 
 ## App to be installed manually (`installer`) or with `brew`
 - Dropbox
