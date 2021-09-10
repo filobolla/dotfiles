@@ -43,7 +43,7 @@ if [[ "${SSH_TTY}" ]]; then
 	hostStyle="${bold}${red}";
 else
 	#hostStyle="${yellow}";
-	hostStyle="${blue}";
+	hostStyle="${violet}";
 fi;
 
 # Set the terminal title and prompt.

@@ -6,7 +6,15 @@ case "${SHELL}" in
   (*) chsh -s "$(which bash)"; exit 1 ;;
 esac
 
-# Check if Xcode CLI Tools are installed
-# Install package managers
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Install Xcode CLI Tools
+xcode-select --install # Might need sudo
 
+# Install Homebrew Package Manager
+if ! which brew > /dev/null; then
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Update and install apps via Homebrew with Brewfile
+brew update
+brew bundle install
+brew cleanup
