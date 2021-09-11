@@ -1,5 +1,13 @@
 #!/bin/env bash
 
+# Ask for administrator password upfront
+sudo -v
+# Keep-alive: update sudo timestamp until .macos has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Run updates before configuration
+sudo softwareupdate -i -a
+
 # Check if running bash, otherwise change the default shell
 case "${SHELL}" in
   (*bash) ;;
@@ -18,3 +26,12 @@ fi
 brew update
 brew bundle install
 brew cleanup
+
+# Setup macos defaults
+source defaults.sh
+
+# Add items to the dock
+source dock.sh
+
+# Apply app-specific customizations (Bookmarks, Extensions, etc.)
+source app_setup.sh
