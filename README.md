@@ -40,7 +40,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Tunnelblick
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
-
+- Adobe CS5 or CC
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
