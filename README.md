@@ -4,6 +4,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
+    
     > Can it be done app-specific?
 - Install QuickLook extensions
 - Setup Widgets in sidebar
@@ -18,6 +19,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Add "Remote Connection" and "Path" buttons in Finder
 - Show Library folder
 - Add Finder favorites
+    
     > See `sfltool`
 - Export file associations
 ### Textedit
@@ -31,6 +33,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Export Karabiner-Elements profile
 - Setup OpenVPN connections
 - Backup Brave/Chromium extension and bookmarks with [Chrome-Bookmark-Parser](https://github.com/DavidMetcalfe/Chrome-Bookmarks-Parser/)
+- Backup Cyberduck Bookmark
 
 ## App to be installed manually (`installer`) or with `brew`
 - Dropbox
@@ -41,6 +44,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
 - Adobe CS5 or CC
+- Wacom driver
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)

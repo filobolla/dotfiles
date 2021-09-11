@@ -108,8 +108,6 @@ cask "logisim"
 cask "malwarebytes"
 # Open-source code snippets manager for developers
 cask "masscode"
-# App to write, plan, collaborate, and get organized
-cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
@@ -130,6 +128,8 @@ cask "wine-stable"
 cask "wireshark"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Apple Configurator 2", id: 1037126344
 mas "Bitwarden", id: 1352778147
 mas "EasyFind", id: 411673888
