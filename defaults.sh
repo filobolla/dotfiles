@@ -14,11 +14,6 @@ COMPUTER_NAME="${MACHINE}-Filo"
 # Close any open System Preferences, to prevent overrindig changes of this script
 osascript -e 'tell application "System Preferences" to quit'                                 
 
-# Ask for administrator password upfront
-sudo -v
-# Keep-alive: update sudo timestamp until .macos has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -65,6 +60,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+##################
+# Power settings #
+##################
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
