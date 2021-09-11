@@ -25,6 +25,11 @@ fi
 # Update and install apps via Homebrew with Brewfile
 brew update
 brew bundle install
+
+# Check if everything is installed and up to date
+brew bundle check --verbose
+
+# Clean downloads and cache files
 brew cleanup
 
 # Setup macos defaults
