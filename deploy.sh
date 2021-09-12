@@ -1,5 +1,8 @@
 #!/bin/env bash
 
+# Define dotfiles folder
+DOTFILES_FOLDER=$(pwd)
+
 # Ask for administrator password upfront
 sudo -v
 # Keep-alive: update sudo timestamp until .macos has finished
@@ -40,3 +43,9 @@ source dock.sh
 
 # Apply app-specific customizations (Bookmarks, Extensions, etc.)
 source app_setup.sh
+
+# Link dotfiles in the HOME folder
+for file in {.bash_profile,.config,.vimrc,.tmux.conf,.gitconfig}; do
+	ln -s "$DOTFILES_FOLDER/${file}" "$HOME/${file}"
+done
+

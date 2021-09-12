@@ -4,7 +4,11 @@
 #########
 # Shell #
 #########
+# TEMPORARY: define dotfiles folder manually
+DOTFILES_FOLDER=${HOME}/Desktop/dotfiles
 
+# Add env variables
+#source $DOTFILES_FOLDER/export
 # Customize prompt
 source $DOTFILES_FOLDER/prompt
 # Import aliases

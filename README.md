@@ -15,6 +15,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Setup `brew` env variables (see `man brew`)
 - Export Folder Actions and Services
 - Backup security and privacy options
+- Manage menubar items (battery,timeutil, etc.)
 ### Finder
 - Add "Remote Connection" and "Path" buttons in Finder
 - Show Library folder

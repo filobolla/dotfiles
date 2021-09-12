@@ -92,6 +92,8 @@ cask "coconutbattery"
 cask "daisydisk"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Web browser
@@ -108,6 +110,10 @@ cask "logisim"
 cask "malwarebytes"
 # Open-source code snippets manager for developers
 cask "masscode"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
@@ -116,6 +122,8 @@ cask "parsec"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 cask "scidavis"
+# Video chat, voice call and instant messaging application
+cask "skype"
 # Configurable document editor that supports Markdown
 cask "typora"
 # Open-source code editor
@@ -135,6 +143,8 @@ mas "Bitwarden", id: 1352778147
 mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Installa macOS Mojave", id: 0
+mas "Installazione macOS Catalina", id: 0
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
