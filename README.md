@@ -35,19 +35,22 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Backup Brave/Chromium extension and bookmarks with [Chrome-Bookmark-Parser](https://github.com/DavidMetcalfe/Chrome-Bookmarks-Parser/)
 - Backup Cyberduck Bookmark
 
-## App to be installed manually (`installer`) or with `brew`
+## App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Dropbox
 - Matlab
-- MS Office
-- Teamviewer
+- MS Office+Updater
+- Teamviewer (problems with brew install on Catalina+)
 - Tunnelblick
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
 - Adobe CS5 or CC
 - Wacom driver
+- Virtualbox (otherwise change to QEMU)
+
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
+- Add dotfiles symlinking to `deploy.sh`
 ## Thanks to
 - Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 
 - Lars Kappert's dotfiles and `dockutil` usage https://github.com/webpro/dotfiles

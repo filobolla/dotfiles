@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Define dotfiles repo location
+export DOTFILES_FOLDER=$(pwd)
+
+# Export scripts path (from syscripts to dotfiles/bin)
+#export PATH=$PATH:/${DOTFILES_FOLDER}/bin
