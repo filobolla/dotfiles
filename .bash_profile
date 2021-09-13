@@ -4,7 +4,7 @@
 #########
 # Shell #
 #########
-# TEMPORARY: define dotfiles folder manually
+# TEMPORARY: define dotfiles folder manually (only for macOS)
 DOTFILES_FOLDER=${HOME}/Desktop/dotfiles
 
 # Add env variables

@@ -35,6 +35,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Setup OpenVPN connections
 - Backup Brave/Chromium extension and bookmarks with [Chrome-Bookmark-Parser](https://github.com/DavidMetcalfe/Chrome-Bookmarks-Parser/)
 - Backup Cyberduck Bookmark
+- Backup MassCode snippets
 
 ## App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Dropbox
