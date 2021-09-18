@@ -2,6 +2,7 @@
 
 # add alias to cd directly into dotfiles repo for quick edits
 alias cdd='cd ${DOTFILES_FOLDER}'
+
 ##############
 # Networking #
 ##############
@@ -10,7 +11,6 @@ alias cdd='cd ${DOTFILES_FOLDER}'
 alias gtw='ping 192.168.3.1'
 # netdev: discover online devices on home lan
 alias netdev='sudo nmap -sn 192.168.3.0/24'
-alias nttcp='/Users/Filippo/Downloads/nttcp'
 
 
 ############
@@ -21,6 +21,7 @@ alias nttcp='/Users/Filippo/Downloads/nttcp'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
 # Colorize ls
 # Check which binary is used (BSD or GNU)
 if ls --color > /dev/null 2>&1; then # GNU `ls`
