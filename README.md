@@ -53,6 +53,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
+- Manage printer preferences with `lpadmin` and `lpoptions`
 - Add dotfiles symlinking to `deploy.sh`
 ## Thanks to
 - Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 
