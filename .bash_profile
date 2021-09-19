@@ -4,11 +4,11 @@
 #########
 # Shell #
 #########
-# TEMPORARY: define dotfiles folder manually (only for macOS)
-DOTFILES_FOLDER=${HOME}/dotfiles
+# Set dotfiles folder globally
+export DOTFILES_FOLDER=${HOME}/dotfiles
 
 # Add env variables
-#source $DOTFILES_FOLDER/export
+source $DOTFILES_FOLDER/export
 # Customize prompt
 source $DOTFILES_FOLDER/prompt
 # Import aliases

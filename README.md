@@ -23,7 +23,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - (Automate launchpad app ordering and folder creations)
 ### Other
 - Export Karabiner-Elements profile
-
+- Add gruvbox-dark theme to Terminal
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
 - Import Cyberduck bookmarks

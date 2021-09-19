@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Define dotfiles repo location
-export DOTFILES_FOLDER=$(pwd)
-
 #############
 # Shell env #
 #############
@@ -13,7 +10,6 @@ export PATH=$PATH:${HOME}/syscripts
 ################
 # Homebrew env #
 ################
-
 # Disable auto-update and auto-cleanup
 export HOMEBREW_NO_AUTO_UPDATE=1;
 export HOMEBREW_NO_INSTALL_CLEANUP=1;
