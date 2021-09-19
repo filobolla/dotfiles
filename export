@@ -5,3 +5,13 @@ export DOTFILES_FOLDER=$(pwd)
 
 # Export scripts path (from syscripts to dotfiles/bin)
 #export PATH=$PATH:/${DOTFILES_FOLDER}/bin
+
+################
+# Homebrew env #
+################
+
+# Disable auto-update and auto-cleanup
+export HOMEBREW_NO_AUTO_UPDATE=1;
+export HOMEBREW_NO_INSTALL_CLEANUP=1;
+# Set cache age to 1 week
+export HOMEBREW_CLEANUP_MAX_AGE_DAYS=7;
