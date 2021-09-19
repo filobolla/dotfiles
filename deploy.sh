@@ -33,7 +33,7 @@ brew bundle install
 brew bundle check --verbose
 
 # Clean downloads and cache files
-brew cleanup
+brew cleanup --purge=all
 
 # Setup macos defaults
 source defaults.sh

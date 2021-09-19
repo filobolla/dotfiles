@@ -1,47 +1,47 @@
 # dotfiles
 Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 
+## Installation
+1. Clone the repo in the home folder
+``` bash
+git clone https://github.com/filobolla/dotfiles.git
+```
+2. Run `deploy.sh` and provide sudo password
+
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
-    
     > Can it be done app-specific?
 - Install QuickLook extensions
-- Setup Widgets in sidebar
-- Change BSD with GNU binaries
+- (Change BSD with GNU binaries)
 - add $PATH to `.bash_profile` instead of `/etc/paths`
 - Set `bash` as default shell (10.15+)
 - Export network positions
-- Setup `brew` env variables (see `man brew`)
 - Export Folder Actions and Services
-- Backup security and privacy options
-	> See `tccutil`
 - Manage menubar items (battery,timeutil, etc.)
-### Finder
-- Add "Remote Connection" and "Path" buttons in Finder
-- Show Library folder
-- Add Finder favorites
-    
-    > See `sfltool`
-- Export file associations
-### Textedit
-- Default mode plain text
-### Mail
-- Automate account setup (and mail import)
 ### Dock
-- Add favorites apps
 - (Automate launchpad app ordering and folder creations)
 ### Other
 - Export Karabiner-Elements profile
-- Setup OpenVPN connections
-- Backup Brave/Chromium extension and bookmarks with [Chrome-Bookmark-Parser](https://github.com/DavidMetcalfe/Chrome-Bookmarks-Parser/)
-- Backup Cyberduck Bookmark
-- Backup MassCode snippets
 
-## App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
+## Things to do manually
+- Import Chrome bookmarks and extensions with rsync from remote share
+- Import Cyberduck bookmarks
+- Import Mail folder
+- Setup Finder favorites
+- Setup Finder toolbar buttons "Remote connection" and "Path"
+- Setup Privacy options
+- Setup file associations
+- Import MassCode snippets database
+- Add Tunnelblick connections
+- Import ssh keys
+- Enable "Open terminal in folder" quick action
+- Setup Widgets in sidebar
+### App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
+- Cinema 4D + Vray
 - Dropbox
 - Matlab
-- MS Office+Updater
+- MS Office+Updater (use `brew`)
 - Teamviewer (problems with brew install on Catalina+)
 - Tunnelblick
 - Digilent Waveforms
@@ -54,7 +54,7 @@ Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
 - Manage printer preferences with `lpadmin` and `lpoptions`
-- Add dotfiles symlinking to `deploy.sh`
+
 ## Thanks to
 - Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 
 - Lars Kappert's dotfiles and `dockutil` usage https://github.com/webpro/dotfiles

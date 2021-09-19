@@ -3,8 +3,12 @@
 # Define dotfiles repo location
 export DOTFILES_FOLDER=$(pwd)
 
+#############
+# Shell env #
+#############
 # Export scripts path (from syscripts to dotfiles/bin)
 #export PATH=$PATH:/${DOTFILES_FOLDER}/bin
+export PATH=$PATH:${HOME}/syscripts
 
 ################
 # Homebrew env #
