@@ -1,11 +1,11 @@
 #!/bin/env bash
 #
-#   _ __ ___   __ _  ___ ___  ___ 
-#  | '_ ` _ \ / _` |/ __/ _ \/ __|
-#  | | | | | | (_| | (_| (_) \__ \
-#  |_| |_| |_|\__,_|\___\___/|___/
-#
-#
+#      _       __             _ _       
+#   __| | ___ / _| __ _ _   _| | |_ ___ 
+#  / _` |/ _ \ |_ / _` | | | | | __/ __|
+# | (_| |  __/  _| (_| | |_| | | |_\__ \
+#  \__,_|\___|_|  \__,_|\__,_|_|\__|___/
+# 
 
 # Retrieve machine model to generate hostname accordingly
 MACHINE=$(sysctl hw.model | cut -d' ' -f2 | sed 's/[0-9]*\,[0-9]//g')
@@ -83,6 +83,13 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Europe/Rome" > /dev/null
 
+# Set language and text formats
+# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
+# `Inches`, `en_GB` with `en_US`, and `true` with `false`.
+defaults write NSGlobalDomain AppleLanguages -array "it"
+defaults write NSGlobalDomain AppleLocale -string "it_IT@currency=EUR"
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 ###############################################################################
 # Screen                                                                      #
@@ -105,6 +112,21 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
+
+# Reset Finder toolbar layout and add custom config
+/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist
+
+# Add custom config with "Path" and "Remote Connection" buttons
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.BACK" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SWCH" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.PATH" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.ACTN" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.CNCT" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SHAR" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SRCH" ~/Library/Preferences/com.apple.finder.plist
 
 # Set Home as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
@@ -130,6 +152,15 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+# Increase grid spacing for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 49" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 49" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 49" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase the size of icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 # Use column view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"

@@ -12,24 +12,19 @@ git clone https://github.com/filobolla/dotfiles.git
 ### System
 - Use dot instead of comma as decimal separator
     > Can it be done app-specific?
-- Install QuickLook extensions
 - (Change BSD with GNU binaries)
 - add $PATH to `.bash_profile` instead of `/etc/paths`
 - Set `bash` as default shell (10.15+)
 - Export network positions
 - Export Folder Actions and Services
-- Manage menubar items (battery,timeutil, etc.)
-### Dock
-- (Automate launchpad app ordering and folder creations)
-### Other
-- Export Karabiner-Elements profile
-- Add gruvbox-dark theme to Terminal
+- Manage menubar items (battery,tmutil, etc.)
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
 - Import Cyberduck bookmarks
 - Import Mail folder
 - Setup Finder favorites
 - Setup Finder toolbar buttons "Remote connection" and "Path"
+	> Can be done with PlistBuddy on key `NSToolbar Configuration Browser`
 - Setup Privacy options
 - Setup file associations
 - Import MassCode snippets database
@@ -49,7 +44,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - Adobe CS5 or CC
 - Wacom driver
 - Virtualbox (otherwise change to QEMU)
-
+- (Automate launchpad app ordering and folder creations)
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
