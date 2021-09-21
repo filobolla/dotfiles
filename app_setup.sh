@@ -1,5 +1,41 @@
 #!/bin/sh
 
+# Setup Terminal theme
+osascript -e <<EOD
+tell application "Terminal"
+	set themeName to "Gruvbox Dark"
+	local allOpenedWindows
+	local initialOpenedWindows
+	local windowID
+
+	(* Store window IDs of open terminal windows *)
+	set initialOpenedWindows to id of every window
+
+	(* Open the theme.terminal file to import Gruvbox Dark styles *)
+	do shell script  "open '$DOTFILES_FOLDER/" & themeName & ".terminal'"
+
+	(* Wait a second for the theme to be loaded *)
+	delay 1
+
+	(* Set Gruvbox Dark as default theme *)
+	set default settings to settings set themeName 
+	
+	(* Get IDs of all opened term windows: open adds two new windows *)
+	set allOpenedWindows to id of every window
+	
+	repeat with windowID in allOpenedWindows
+		(* Close additional terminal windows *)
+		if initialOpenedWindows does not contain windowID then
+			close (every window whose id is windowID)
+
+		(* Set Gruvbox theme to all other open windows*)
+		else
+			set current settings of tabs of (every window whose id is windowID) to settings set themeName
+		end if
+	end repeat
+end tell
+EOD
+
 # Install vscode extensions
 cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
 
