@@ -17,7 +17,6 @@ git clone https://github.com/filobolla/dotfiles.git
 - Set `bash` as default shell (10.15+)
 - Export network positions
 - Export Folder Actions and Services
-- Manage menubar items (battery,tmutil, etc.)
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
 - Import Cyberduck bookmarks
@@ -29,12 +28,13 @@ git clone https://github.com/filobolla/dotfiles.git
 - Setup file associations
 - Import MassCode snippets database
 - Add Tunnelblick connections
+	> See AppleScript support for Tunnelblick
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 - Setup Widgets in sidebar
+- Manage menubar items (battery,tmutil, etc.)
 ### App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Cinema 4D + Vray
-- Dropbox
 - Matlab
 - MS Office+Updater (use `brew`)
 - Teamviewer (problems with brew install on Catalina+)
