@@ -45,7 +45,7 @@ source dock.sh
 source app_setup.sh
 
 # Link dotfiles in the HOME folder
-for file in {.bash_profile,.config,.vimrc,.tmux.conf,.gitconfig}; do
+for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
 	ln -s "$DOTFILES_FOLDER/${file}" "$HOME/${file}"
 done
 

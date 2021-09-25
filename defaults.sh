@@ -45,6 +45,12 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Disable the “Are you sure you want to open this application?” dialog (CAUTION when download from unknown sources)
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+# Disable Resume system-wide
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+
+# Disable automatic termination of inactive apps
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -63,6 +69,17 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ##################
 # Power settings #
 ##################
+
+# Enable lid wakeup
+sudo pmset -a lidwake 1
+
+# Setup display sleep to 5 minutes for battery and 15 minutes for AC power
+sudo pmset -b displaysleep 5
+sudo pmset -c displaysleep 15
+
+# Setup machine sleep timer
+sudo pmset -b sleep 15
+sudo pmset -c sleep 30
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -107,7 +124,6 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
-
 
 ###############################################################################
 # Finder                                                                      #
@@ -178,7 +194,6 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	OpenWith -bool true \
 	Privileges -bool true
 
-
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
@@ -204,14 +219,12 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
-
 ###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
 
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
-
 
 ###############################################################################
 # Time Machine                                                                #
@@ -246,26 +259,18 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 ###############################################################################
 
 for app in "Activity Monitor" \
-	"Address Book" \
 	"Calendar" \
 	"cfprefsd" \
 	"Contacts" \
 	"Dock" \
 	"Finder" \
-	"Google Chrome Canary" \
 	"Google Chrome" \
 	"Mail" \
 	"Messages" \
-	"Opera" \
 	"Photos" \
 	"Safari" \
-	"SizeUp" \
-	"Spectacle" \
 	"SystemUIServer" \
 	"Terminal" \
-	"Transmission" \
-	"Tweetbot" \
-	"Twitter" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
 done
