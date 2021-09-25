@@ -16,9 +16,13 @@ git clone https://github.com/filobolla/dotfiles.git
 - add $PATH to `.bash_profile` instead of `/etc/paths`
 - Set `bash` as default shell (10.15+)
 - Export network positions
+	> See `networksetup`, prefs are stored in `/Library/Preferences/SystemConfiguration/preferences.plist`
+- Export printer preferences
+	> See `lp`,`lpadmin`,`lpoptions` and CUPS-related software
 - Export Folder Actions and Services
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
+	> Brave/Chrome must be also set as default browser
 - Import Cyberduck bookmarks
 - Import Mail folder
 - Setup Finder favorites
