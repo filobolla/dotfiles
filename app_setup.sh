@@ -39,9 +39,6 @@ EOD
 # Install vscode extensions
 cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
 
-# TODO:
-# - Add favorites folders and toolbar items to Finder
-# - Scripting Launchpad folder creations
 
 # Check if the Public folder is mounted to import the needed files
 if ! test -d /Volumes/Public; then
@@ -59,10 +56,21 @@ fi
 if test find /Applications -type d -maxdepth 1 -name "Brave Browser.app">/dev/null; then
 # mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Bookmarks "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
 # mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Preferences "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
+fi
 
 # - Import massCode database
 if test find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null; then
 # mv /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
+fi
 
 # - Import mail folders
 # mv /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
+
+# Create network location for interfacing with RPi without router
+sudo networksetup -createlocation "RPi First Connect" populate
+sudo networksetup -switchlocation "RPi First Connect"
+# Setup manual IPs for wired and WLAN interfaces
+sudo networksetup -setmanual "Ethernet Thunderbolt" 192.168.100.201 255.255.255.0 192.168.100.1
+sudo networksetup -setmanual "WiFi" 192.168.100.200 255.255.255.0 192.168.100.1
+# Return to the automatic location
+sudo networksetup -switchtolocation "Automatic"
