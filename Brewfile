@@ -2,12 +2,11 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/core"
+tap "homebrew/services"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
-# Searches a binary image for embedded files and executable code
-brew "binwalk"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
@@ -16,8 +15,16 @@ brew "pkg-config"
 brew "tcl-tk"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Searches a binary image for embedded files and executable code
+brew "binwalk"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Utilities for converting macOS DMG images
+brew "dmg2img"
 # Tool for managing dock items
 brew "dockutil"
 # Run arbitrary commands when files change
@@ -26,10 +33,6 @@ brew "entr"
 brew "exiftool"
 # Identify or delete duplicate files
 brew "fdupes"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Play, record, convert, and stream audio and video
@@ -54,6 +57,8 @@ brew "mas"
 brew "nload"
 # Platform built on V8 to build network applications
 brew "node"
+# Emulator for x86 and PowerPC
+brew "qemu"
 # Find duplicate files based on content (NOT file names)
 brew "rdfind"
 # Perl-powered file rename script with many helpful built-ins
@@ -86,6 +91,8 @@ cask "appcleaner"
 cask "arduino"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Disk space visualizer
@@ -96,8 +103,6 @@ cask "dbeaver-community"
 cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
-# Web browser
-cask "firefox"
 # Free and open-source media player
 cask "iina"
 # Password manager compatible with KeePass
@@ -143,8 +148,6 @@ mas "Bitwarden", id: 1352778147
 mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Installa macOS Mojave", id: 0
-mas "Installazione macOS Catalina", id: 0
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
