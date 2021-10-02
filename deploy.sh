@@ -8,9 +8,6 @@ sudo -v
 # Keep-alive: update sudo timestamp until .macos has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Run updates before configuration
-sudo softwareupdate -i -a
-
 # Check if running bash, otherwise change the default shell
 case "${SHELL}" in
   (*bash) ;;

@@ -2,15 +2,19 @@
 Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 
 ## Installation
-1. Install Xcode CLI Tools
+1. Run updates before configuration
+``` bash 
+sudo softwareupdate -i -a
+```
+2. Install Xcode CLI Tools
 ``` bash
 xcode-select --install
 ```
-2. Clone the repo in the home folder
+3. Clone the repo in the home folder
 ``` bash
 git clone https://github.com/filobolla/dotfiles.git
 ```
-3. Run `deploy.sh` and provide sudo password
+4. Run `deploy.sh` and provide sudo password
 
 ## Things to implement in these dotfiles
 ### System
