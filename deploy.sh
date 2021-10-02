@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # Define dotfiles folder
 DOTFILES_FOLDER=$(pwd)
