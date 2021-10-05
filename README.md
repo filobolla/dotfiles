@@ -2,6 +2,8 @@
 Dotfiles to be deployed to macOS and (to some extent) *NIX machines
 
 ## Installation
+0. (Login into App Store in order to use `mas`)
+	> App Store can ask for prompts (previous version of apps), needs to be sorted out
 1. Run updates before configuration
 ``` bash 
 sudo softwareupdate -i -a
