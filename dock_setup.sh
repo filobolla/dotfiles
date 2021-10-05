@@ -14,7 +14,7 @@ defaults write com.apple.dock persistent-apps -array
 
 # Add apps to the Dock
 for app in APP_LIST; do
-defaults write com.apple.dock persistent-apps -array-add "dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/${app}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/${app}.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 done
 
 # After adding programs, restart Dock
