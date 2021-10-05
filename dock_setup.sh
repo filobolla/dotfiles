@@ -7,8 +7,8 @@
 # \__,_|\___/ \___|_|\_\
 #
 
-# App list
-APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Terminal" "TextEdit" "Utilities/Activity Monitor" "Microsoft Teams" "Telegram" "Typora" "Microsoft Remote Desktop");
+# App paths list
+APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Utilities/Terminal" "TextEdit" "Utilities/Activity Monitor" "Microsoft Teams" "Telegram" "Typora" "Microsoft Remote Desktop");
 # Empty Dock persisten apps
 defaults write com.apple.dock persistent-apps -array
 
