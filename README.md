@@ -37,7 +37,8 @@ git clone https://github.com/filobolla/dotfiles.git
 - Import Mail folder
 - Setup Finder favorites
 - Setup Finder toolbar buttons "Remote connection" and "Path"
-	> Can be done with PlistBuddy on key `NSToolbar Configuration Browser`
+	> - Can be done with PlistBuddy on key `NSToolbar Configuration Browser`
+	> - To enable this key we must edit the toolbar beforehand
 - Setup Privacy options
 - Setup file associations
 - Import MassCode snippets database

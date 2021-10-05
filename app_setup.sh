@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Setup Terminal theme
-osascript -e <<EOD
+osascript << EOD
 tell application "Terminal"
 	set themeName to "Gruvbox Dark"
 	local allOpenedWindows
@@ -37,7 +37,7 @@ end tell
 EOD
 
 # Install vscode extensions
-cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+cat Codefile.txt | xargs -n 1 code --install-extension
 
 
 # Check if the Public folder is mounted to import the needed files
