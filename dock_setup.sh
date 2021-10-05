@@ -8,7 +8,7 @@
 #
 
 # App list
-APP_LIST={"Brave Browser","Mail","Notes","Visual Studio Code","Terminal","TextEdit","Activity Monitor","Microsoft Teams","Telegram","Typora","Microsoft Remote Desktop"};
+APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Terminal" "TextEdit" "Activity Monitor" "Microsoft Teams" "Telegram" "Typora" "Microsoft Remote Desktop");
 # Empty Dock persisten apps
 defaults write com.apple.dock persistent-apps -array
 
