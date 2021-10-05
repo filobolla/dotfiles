@@ -16,29 +16,37 @@ esac
 
 # Install Homebrew Package Manager
 if ! which brew > /dev/null; then
+	echo "Installing Homebrew...\n"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+	echo "Homebrew already installed, skipping...\n"
 fi
 
 # Update and install apps via Homebrew with Brewfile
 brew update
-brew bundle install
+echo "Installing favorite apps from Brewfile...\n"
+brew bundle install -v
 
 # Check if everything is installed and up to date
 brew bundle check --verbose
 
 # Clean downloads and cache files
-brew cleanup --purge=all
+brew cleanup --prune=all
 
 # Setup macos defaults
+echo "Setup macOS system preferences with defaults...\n"
 source defaults.sh
 
 # Add items to the dock
+echo "Add favorite apps to the Dock...\n"
 source dock.sh
 
 # Apply app-specific customizations (Bookmarks, Extensions, etc.)
+echo "Customize some apps...\n"
 source app_setup.sh
 
 # Link dotfiles in the HOME folder
+echo "Linking dotfiles in the \$HOME folder...\n"
 for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
 	ln -s "$DOTFILES_FOLDER/${file}" "$HOME/${file}"
 done
