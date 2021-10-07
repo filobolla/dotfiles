@@ -30,6 +30,8 @@ git clone https://github.com/filobolla/dotfiles.git
 - Export printer preferences
 	> See `lp`,`lpadmin`,`lpoptions` and CUPS-related software
 - Export Folder Actions and Services
+- Manage menubar items (see `com.apple.systemuiserver)
+	> For Big Sur see `com.apple.controlcenter`
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
 	> Brave/Chrome must be also set as default browser
