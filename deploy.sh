@@ -31,7 +31,7 @@ brew bundle install -v
 brew bundle check --verbose
 
 # Clean downloads and cache files
-brew cleanup --prune=all
+brew cleanup --purge=all
 
 # Setup macos defaults
 echo "Setup macOS system preferences with defaults...\n"
