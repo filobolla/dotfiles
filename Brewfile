@@ -21,12 +21,12 @@ brew "gobject-introspection"
 brew "harfbuzz"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
+# Mozilla CA certificate store
+brew "ca-certificates"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
-# Tool for managing dock items
-brew "dockutil"
 # Run arbitrary commands when files change
 brew "entr"
 # Perl lib for reading and writing EXIF metadata
@@ -135,8 +135,6 @@ cask "typora"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Compatibility layer to run Windows applications
-cask "wine-stable"
 # Network protocol analyzer
 cask "wireshark"
 # Open-source version of the X.Org X Window System
