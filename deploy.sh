@@ -2,6 +2,8 @@
 
 # Define dotfiles folder
 DOTFILES_FOLDER=$(pwd)
+# Check machine type (Intel or Apple Silicon)
+APPLE_ARCH=$(uname -m)
 
 # Ask for administrator password upfront
 sudo -v
@@ -18,6 +20,10 @@ esac
 if ! which brew > /dev/null; then
 	echo "Installing Homebrew...\n"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	if [ "$APPLE_ARCH" -eq "arm64" ]; then
+		# Add /opt/homebrew/bin to PATH in order to invoke brew
+		export PATH="/opt/homebrew/bin:${PATH}"
+	fi
 else
 	echo "Homebrew already installed, skipping...\n"
 fi
