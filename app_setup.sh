@@ -37,8 +37,7 @@ end tell
 EOD
 
 # Install vscode extensions
-cat Codefile.txt | xargs -n 1 code --install-extension
-
+cat Codefile | xargs -n 1 code --install-extension
 
 # Check if the Public folder is mounted to import the needed files
 if ! test -d /Volumes/Public; then
