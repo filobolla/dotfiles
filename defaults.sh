@@ -132,6 +132,20 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Reset Finder toolbar layout and add custom config
 #/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist
 
+# Add TB Items Identifiers
+defaults write com.apple.finder "NSToolbar Configuration Browser" -dict-add "TB Items Identifiers" "<array>
+	<string>com.apple.finder.BACK</string>
+	<string>NSToolbarFlexibleSpaceItem</string>
+	<string>com.apple.finder.SWCH</string>
+	<string>NSToolbarFlexibleSpaceItem</string>
+	<string>com.apple.finder.PATH</string>
+	<string>NSToolbarFlexibleSpaceItem</string>
+	<string>com.apple.finder.ACTN</string>
+	<string>com.apple.finder.CNCT</string>
+	<string>com.apple.finder.SHAR</string>
+	<string>com.apple.finder.SRCH</string> 
+</array>"
+
 # Add custom config with "Path" and "Remote Connection" buttons
 #/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.BACK" ~/Library/Preferences/com.apple.finder.plist
 #/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
