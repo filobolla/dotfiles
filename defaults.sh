@@ -129,11 +129,8 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Finder                                                                      #
 ###############################################################################
 
-# Reset Finder toolbar layout and add custom config
-#/usr/libexec/PlistBuddy -c "Delete :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers" ~/Library/Preferences/com.apple.finder.plist
-
 # Add TB Items Identifiers
-defaults write com.apple.finder "NSToolbar Configuration Browser" -dict-add "TB Items Identifiers" "<array>
+defaults write com.apple.finder "NSToolbar Configuration Browser" -dict-add "TB Item Identifiers" "<array>
 	<string>com.apple.finder.BACK</string>
 	<string>NSToolbarFlexibleSpaceItem</string>
 	<string>com.apple.finder.SWCH</string>
@@ -145,18 +142,6 @@ defaults write com.apple.finder "NSToolbar Configuration Browser" -dict-add "TB 
 	<string>com.apple.finder.SHAR</string>
 	<string>com.apple.finder.SRCH</string> 
 </array>"
-
-# Add custom config with "Path" and "Remote Connection" buttons
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.BACK" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SWCH" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.PATH" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string NSToolbarFlexibleSpaceItem" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.ACTN" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.CNCT" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SHAR" ~/Library/Preferences/com.apple.finder.plist
-#/usr/libexec/PlistBuddy -c "Add :NSToolbar\ Configuration\ Browser:TB\ Item\ Identifiers: string com.apple.finder.SRCH" ~/Library/Preferences/com.apple.finder.plist
 
 # Set Home as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
@@ -196,7 +181,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+chflags nohidden ~/Library 
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
@@ -284,7 +269,7 @@ for app in "Activity Monitor" \
 	"Photos" \
 	"Safari" \
 	"SystemUIServer" \
-	#"Terminal" \
+#	"Terminal" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
 done
