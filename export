@@ -10,6 +10,8 @@ export PATH=$PATH:${HOME}/syscripts
 ################
 # Homebrew env #
 ################
+# If on arm, add /opt path
+export PATH="/opt/homebrew/bin:${PATH}"
 # Disable auto-update and auto-cleanup
 export HOMEBREW_NO_AUTO_UPDATE=1;
 export HOMEBREW_NO_INSTALL_CLEANUP=1;
