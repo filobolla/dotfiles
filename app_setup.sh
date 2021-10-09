@@ -46,19 +46,19 @@ fi
 
 # - Import Cyberduck bookmarks
 # Check if Cyberduck is running, then move Bookmark folder
-if test find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null; then
+if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null); then
 ## IMPORTANT: check permissions after import and set them accordingly
 cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 fi
 
 # - Import Brave bookmarks and preferences
-if test find /Applications -type d -maxdepth 1 -name "Brave Browser.app">/dev/null; then
+if test $(find /Applications -type d -maxdepth 1 -name "Brave Browser.app">/dev/null); then
 # mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Bookmarks "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
 # mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Preferences "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
 fi
 
 # - Import massCode database
-if test find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null; then
+if test $(find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null); then
 # mv /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
 fi
 
