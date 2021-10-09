@@ -53,17 +53,17 @@ fi
 
 # - Import Brave bookmarks and preferences
 if test $(find /Applications -type d -maxdepth 1 -name "Brave Browser.app">/dev/null); then
-# mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Bookmarks "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
-# mv /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Preferences "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
+cp -R /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Bookmarks "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
+cp -R /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Preferences "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
 fi
 
 # - Import massCode database
 if test $(find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null); then
-# mv /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
+cp -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
 fi
 
 # - Import mail folders
-# mv /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
+cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
 
 # Create network location for interfacing with RPi without router
 sudo networksetup -createlocation "RPi First Connect" populate
