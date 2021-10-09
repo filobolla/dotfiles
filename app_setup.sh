@@ -41,14 +41,14 @@ cat Codefile | xargs -n 1 code --install-extension
 
 # Check if the Public folder is mounted to import the needed files
 if ! test -d /Volumes/Public; then
-	open 'smb://filippo@192.168.3.4/Public' # NEEDS PASSWORD!
+	open 'smb://filippo@casabolla-nas/Public' # NEEDS PASSWORD!
 fi
 
 # - Import Cyberduck bookmarks
 # Check if Cyberduck is running, then move Bookmark folder
 if test find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null; then
 ## IMPORTANT: check permissions after import and set them accordingly
-# cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Application Support/CyberDuck/"
+cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 fi
 
 # - Import Brave bookmarks and preferences

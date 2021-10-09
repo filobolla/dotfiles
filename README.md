@@ -52,13 +52,10 @@ git clone https://github.com/filobolla/dotfiles.git
 ### App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Cinema 4D + Vray
 - Matlab
-- Teamviewer (problems with brew install on Catalina+)
-- Tunnelblick
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
 - Adobe CS5 or CC
 - Wacom driver
-- Virtualbox (otherwise change to QEMU)
 - (Automate launchpad app ordering and folder creations)
 ## TODO
 - Make this install idempotent
