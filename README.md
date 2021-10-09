@@ -23,8 +23,6 @@ git clone https://github.com/filobolla/dotfiles.git
 - Use dot instead of comma as decimal separator
     > Can it be done app-specific?
 - (Change BSD with GNU binaries)
-- add $PATH to `.bash_profile` instead of `/etc/paths`
-- Set `bash` as default shell (10.15+)
 - Export network positions
 	> See `networksetup`, prefs are stored in `/Library/Preferences/SystemConfiguration/preferences.plist`
 - Export printer preferences
@@ -48,12 +46,12 @@ git clone https://github.com/filobolla/dotfiles.git
 	> See AppleScript support for Tunnelblick
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
+	> Only needed in <11.0
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
 ### App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Cinema 4D + Vray
 - Matlab
-- MS Office+Updater (use `brew`)
 - Teamviewer (problems with brew install on Catalina+)
 - Tunnelblick
 - Digilent Waveforms
@@ -65,9 +63,8 @@ git clone https://github.com/filobolla/dotfiles.git
 ## TODO
 - Make this install idempotent
 - Make these dotfiles cross-platform (macOS and Linux)
-- Manage printer preferences with `lpadmin` and `lpoptions`
 
 ## Thanks to
 - Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 
 - Lars Kappert's dotfiles and `dockutil` usage https://github.com/webpro/dotfiles
-
+- Ben Alman's dotfiles https://github.com/cowboy/dotfiles
