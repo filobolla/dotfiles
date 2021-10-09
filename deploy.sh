@@ -19,7 +19,7 @@ esac
 # Install Homebrew Package Manager
 if ! which brew > /dev/null; then
 	echo "Installing Homebrew...\n"
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	true | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	if [ "$APPLE_ARCH" -eq "arm64" ]; then
 		# Add /opt/homebrew/bin to PATH in order to invoke brew
 		export PATH="/opt/homebrew/bin:${PATH}"
