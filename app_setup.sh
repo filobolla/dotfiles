@@ -64,6 +64,7 @@ fi
 
 # - Import mail folders
 cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
+cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
 
 # Create network location for interfacing with RPi without router
 sudo networksetup -createlocation "RPi First Connect" populate

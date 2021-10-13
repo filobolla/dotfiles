@@ -35,6 +35,7 @@ git clone https://github.com/filobolla/dotfiles.git
 	> Brave/Chrome must be also set as default browser
 - Import Cyberduck bookmarks
 - Import Mail folder
+	> Also needed to copy `com.apple.mail.plist` and Accounts folder
 - Setup Finder favorites
 - Setup Finder toolbar buttons "Remote connection" and "Path"
 	> - Can be done with PlistBuddy on key `NSToolbar Configuration Browser`
@@ -59,6 +60,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - (Automate launchpad app ordering and folder creations)
 ## TODO
 - Make this install idempotent
+	> Divide scripts into functions and recall them in `deploy.sh`
 - Make these dotfiles cross-platform (macOS and Linux)
 
 ## Thanks to
