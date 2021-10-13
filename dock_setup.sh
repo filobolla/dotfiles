@@ -17,7 +17,7 @@ defaults write com.apple.dock persistent-apps -array
 
 # Add apps to the Dock
 for app in "${APP_LIST[@]}"; do
-	if [ "$APPLE_ARCH" -eq "arm64" ]; then
+	if [ "$APPLE_ARCH" = "arm64" ]; then
 		# Search also into /System/Applications
 		APP_PATH=$(find "/Applications" "/System/Applications" -type d -name "${app}.app")
 	else
