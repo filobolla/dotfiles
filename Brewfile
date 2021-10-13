@@ -91,6 +91,8 @@ cask "appcleaner"
 cask "arduino"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# Desktop password and login vault
+cask "bitwarden"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Tool to show live information about the batteries in various devices
@@ -117,6 +119,8 @@ cask "malwarebytes"
 cask "masscode"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Remote desktop client
+cask "microsoft-remote-desktop"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Open-source software for live streaming and screen recording
@@ -129,6 +133,10 @@ cask "qlcolorcode"
 cask "scidavis"
 # Video chat, voice call and instant messaging application
 cask "skype"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Unpacks archive files
+cask "the-unarchiver"
 # Configurable document editor that supports Markdown
 cask "typora"
 # Open-source code editor
@@ -142,15 +150,11 @@ cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Apple Configurator 2", id: 1037126344
-mas "Bitwarden", id: 1352778147
 mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Shazam", id: 897118787
-mas "Telegram", id: 747648890
-mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
