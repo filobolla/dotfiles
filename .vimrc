@@ -5,6 +5,8 @@
 "   \_/ |_|_| |_| |_|_|  \___|
 "
 
+" Forcing colorscheme on vim 8.2 big sur (opens with ron theme)
+colorscheme default
 set nocompatible
 " Syntax highlight
 syntax on
