@@ -1,6 +1,3 @@
-# Launch tmux session if installed
-#if ( command -v tmux &> /dev/null ); then tmux; fi
-
 #########
 # Shell #
 #########
@@ -8,11 +5,11 @@
 export DOTFILES_FOLDER=${HOME}/dotfiles
 
 # Add env variables
-source $DOTFILES_FOLDER/export
+source "${DOTFILES_FOLDER}/export"
 # Customize prompt
-source $DOTFILES_FOLDER/prompt
+source "$DOTFILES_FOLDER/prompt"
 # Import aliases
-source $DOTFILES_FOLDER/aliases
+source "$DOTFILES_FOLDER/aliases"
 
 # Disable bash deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1;
@@ -20,7 +17,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1;
 export HISTCONTROL='ignoreboth';
 
 # Add brew bash completions
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 ############
 # Less-Man #
