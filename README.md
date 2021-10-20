@@ -30,11 +30,22 @@ git clone https://github.com/filobolla/dotfiles.git
 - Export Folder Actions and Services
 - Manage menubar items (see `com.apple.systemuiserver)
 	> For Big Sur see `com.apple.controlcenter`
+- Set trackpad preferences (disables force touch)
+	> see `com.apple.AppleMultitouchTrackpad`
+- Clone _syscripts_ repo to add script utilities
+- Add git aliases
+- (Change launchpad grid if screen is bigger)
+- Remove `com.apple.quarantine` with `xattr`
+	> Remove from `defaults.sh` the relative line
+	> Search for post-install scripts for Homebrew
+- Redo Homebrew env variables
+	> Set `brew update` time interval to 2 weeks
 ## Things to do manually
 - Import Chrome bookmarks and extensions with rsync from remote share
 	> Brave/Chrome must be also set as default browser
 - Import Cyberduck bookmarks
 - Import Mail folder
+	> Also needed to copy `com.apple.mail.plist` and Accounts folder
 - Setup Finder favorites
 - Setup Finder toolbar buttons "Remote connection" and "Path"
 	> - Can be done with PlistBuddy on key `NSToolbar Configuration Browser`
@@ -43,7 +54,6 @@ git clone https://github.com/filobolla/dotfiles.git
 - Setup file associations
 - Import MassCode snippets database
 - Add Tunnelblick connections
-	> See AppleScript support for Tunnelblick
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 	> Only needed in <11.0
@@ -59,6 +69,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - (Automate launchpad app ordering and folder creations)
 ## TODO
 - Make this install idempotent
+	> Divide scripts into functions and recall them in `deploy.sh`
 - Make these dotfiles cross-platform (macOS and Linux)
 
 ## Thanks to
