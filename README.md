@@ -59,6 +59,8 @@ git clone https://github.com/filobolla/dotfiles.git
 	> Only needed in <11.0
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
+- Import desktop pictures into Library
+
 ### App to be installed manually (`installer`) or with `brew` (to be added to Brewfile)
 - Cinema 4D + Vray
 - Matlab
