@@ -34,8 +34,8 @@ git clone https://github.com/filobolla/dotfiles.git
 - Clone _syscripts_ repo to add script utilities
 - Add git aliases
 - Remove `com.apple.quarantine` with `xattr`
-	> Remove from `defaults.sh` the relative line
-	> Search for post-install scripts for Homebrew
+	> Remove from `defaults.sh` the relative line  
+	Search for post-install scripts for Homebrew
 - Redo Homebrew env variables
 	> Set `brew update` time interval to 2 weeks
 - (Change BSD with GNU binaries)
