@@ -24,6 +24,9 @@ sudo scutil --set HostName "$COMPUTER_NAME"
 sudo scutil --set LocalHostName "$COMPUTER_NAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
+# Set Blue as highlight color
+defaults write NSGlobalDomain AppleHighlightColor -string "0.698039 0.843137 1.000000 Blue"
+
 # Set sidebar icon size to small (1:small (default in <10.15), 2:medium (Catalina default), 3:big)
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
@@ -31,9 +34,18 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
+# Disable "Apply background coloring to windows"
+defaults write NSGlobalDomain AppleReduceDesktopTinting -bool true
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Set "Open" and "Save" popup panels as list
+defaults write NSGlobalDomain NavPanelFileListModeForOpenMode -bool true
+defaults write NSGlobalDomain NSNavPanelFileListModeForOpenMode2 -bool true
+defaults write NSGlobalDomain NavPanelFileListModeForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelFileListModeForSaveMode2 -bool true
 
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
