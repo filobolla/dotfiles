@@ -46,7 +46,8 @@ git clone https://github.com/filobolla/dotfiles.git
 - Sync Brave bookmarks, settings and extensions
 - Import Cyberduck bookmarks
 - Import Mail folder
-	> Also needed to copy `com.apple.mail.plist` and Accounts folder
+	> - Also needed to copy `com.apple.mail.plist` and Accounts folder  
+	> - Setup with AppleScript mail accounts, then import POP mailboxes
 - Setup Finder favorites
 - Setup Privacy options
 - Setup file associations
@@ -57,7 +58,9 @@ git clone https://github.com/filobolla/dotfiles.git
 	> Only needed in <11.0
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
-- Import desktop pictures into Library
+- Import desktop pictures
+	> Add `wallpaper` folder to $HOME and set hidden flag
+	> use `background.sh` to setup slideshow
 
 ### App to be installed manually (`installer`)
 - Cinema 4D + Vray
