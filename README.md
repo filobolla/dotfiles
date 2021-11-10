@@ -38,6 +38,7 @@ git clone https://github.com/filobolla/dotfiles.git
 	Search for post-install scripts for Homebrew
 - Redo Homebrew env variables
 	> Set `brew update` time interval to 2 weeks
+- Enable remote login and management (ssh and vnc) through `systemsetup`
 - (Change BSD with GNU binaries)
 - (Change launchpad grid if screen is bigger)
 - (Automate launchpad app ordering and folder creations)
