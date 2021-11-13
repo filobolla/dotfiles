@@ -47,24 +47,39 @@ fi
 # - Import Cyberduck bookmarks
 # Check if Cyberduck is running, then move Bookmark folder
 if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null); then
-## IMPORTANT: check permissions after import and set them accordingly
-cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
-fi
-
-# - Import Brave bookmarks and preferences
-if test $(find /Applications -type d -maxdepth 1 -name "Brave Browser.app">/dev/null); then
-cp -R /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Bookmarks "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
-cp -R /Volumes/Public/Filippo/dotfiles_backup/Brave-Browser/Preferences "${HOME}/Library/Application Support/BraveSoftware/Brave-Browser/Default/"
+	## IMPORTANT: check permissions after import and set them accordingly
+	cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
+else
+	echo "Cyberduck not installed, skipping import...\n"
 fi
 
 # - Import massCode database
 if test $(find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null); then
-cp -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
+	cp -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
+else
+	echo "massCode not installed, skipping import...\n"
 fi
 
+# TODO: Setup Mail accounts with Applescript
 # - Import mail folders
-cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
-cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
+#cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
+#cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
+
+# - Setup tunnelblick connections
+TUNNELBLICK_FOLDER="/Users/filippo/Library/Application Support/Tunnelblick/Configurations"
+if test -d "$TUNNELBLICK_FOLDER"; then
+        mkdir -p "$TUNNELBLICK_FOLDER"
+fi
+mkdir -p "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources"
+mkdir -p "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources"
+chmod -R 750 "${TUNNELBLICK_FOLDER}/"*.tblk
+
+# Import config for Casa 
+cp "/Volumes/Public/Filippo/dotfiles_backup/vpn_config/filippo.ovpn" "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/"
+mv "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/filippo.ovpn" "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/config.ovpn" && chmod 740 "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/config.ovpn"
+# Import config for Ufficio 
+cp "/Volumes/Public/Filippo/dotfiles_backup/vpn_config/openvpn_ufficio/VPNConfig.ovpn" "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/"
+mv "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/VPNConfig.ovpn" "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/config.ovpn" && chmod 740 "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/config.ovpn"
 
 # Create network location for interfacing with RPi without router
 sudo networksetup -createlocation "RPi First Connect" populate
