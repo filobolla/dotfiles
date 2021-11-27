@@ -54,6 +54,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - Setup file associations
 - Import MassCode snippets database
 - Add Tunnelblick connections
+	> Made procedure in `app_setup.sh`
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 	> Only needed in <11.0
