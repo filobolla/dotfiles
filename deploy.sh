@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Check if running bash, otherwise change the default shell
 case "${SHELL}" in
   (*bash) ;;
-  (*) chsh -s "$(which bash)"; exit 1 ;;
+  (*) chsh -s "$(which bash)";;
 esac
 
 # Install Homebrew Package Manager
@@ -37,7 +37,7 @@ brew bundle install -v
 brew bundle check --verbose
 
 # Clean downloads and cache files
-brew cleanup --purge=all
+brew cleanup --prune=all
 
 # Setup macos defaults
 echo "Setup macOS system preferences with defaults...\n"

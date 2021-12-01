@@ -60,7 +60,6 @@ else
 	echo "massCode not installed, skipping import...\n"
 fi
 
-# TODO: Setup Mail accounts with Applescript
 # - Import mail folders
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
