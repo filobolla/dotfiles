@@ -6,48 +6,6 @@
 	<array>
 		<dict>
 			<key>EmailAccountDescription</key>
-			<string>Poli</string>
-			<key>EmailAccountName</key>
-			<string>Filippo Bollarino</string>
-			<key>EmailAccountType</key>
-			<string>EmailTypeIMAP</string>
-			<key>EmailAddress</key>
-			<string>s287670@studenti.polito.it</string>
-			<key>IncomingMailServerAuthentication</key>
-			<string>EmailAuthPassword</string>
-			<key>IncomingMailServerHostName</key>
-			<string>imap.studenti.polito.it</string>
-			<key>IncomingMailServerUseSSL</key>
-			<true/>
-			<key>IncomingMailServerUsername</key>
-			<string>s287670@studenti.polito.it</string>
-			<key>OutgoingMailServerAuthentication</key>
-			<string>EmailAuthPassword</string>
-			<key>OutgoingMailServerHostName</key>
-			<string>smtp.studenti.polito.it</string>
-			<key>OutgoingMailServerPortNumber</key>
-			<integer>465</integer>
-			<key>OutgoingMailServerUseSSL</key>
-			<true/>
-			<key>OutgoingMailServerUsername</key>
-			<string>s287670@studenti.polito.it</string>
-			<key>OutgoingPasswordSameAsIncomingPassword</key>
-			<true/>
-			<key>PayloadDisplayName</key>
-			<string>Mail</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.mail.managed.DA90B8A1-1E37-458E-817C-7E0E6C33429D</string>
-			<key>PayloadOrganization</key>
-			<string></string>
-			<key>PayloadType</key>
-			<string>com.apple.mail.managed</string>
-			<key>PayloadUUID</key>
-			<string>DA90B8A1-1E37-458E-817C-7E0E6C33429D</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>EmailAccountDescription</key>
 			<string>Hotmail</string>
 			<key>EmailAccountName</key>
 			<string>Filippo Bollarino</string>
@@ -82,13 +40,15 @@
 			<key>PayloadDisplayName</key>
 			<string>Hotmail</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.mail.managed.2F70C207-7ABB-4E0B-BC38-3D45751A73FA</string>
+			<string>com.apple.mail.managed.59F6536B-83ED-464F-8CBE-139AB3689D5E</string>
 			<key>PayloadType</key>
 			<string>com.apple.mail.managed</string>
 			<key>PayloadUUID</key>
-			<string>2F70C207-7ABB-4E0B-BC38-3D45751A73FA</string>
+			<string>59F6536B-83ED-464F-8CBE-139AB3689D5E</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>PreventAppSheet</key>
+			<true/>
 			<key>SMIMEEnablePerMessageSwitch</key>
 			<false/>
 			<key>SMIMEEnabled</key>
@@ -102,6 +62,186 @@
 			<key>disableMailRecentsSyncing</key>
 			<false/>
 		</dict>
+		<dict>
+			<key>EmailAccountDescription</key>
+			<string>Ufficio Acquisti</string>
+			<key>EmailAccountName</key>
+			<string>Federico Bollarino srl</string>
+			<key>EmailAccountType</key>
+			<string>EmailTypePOP</string>
+			<key>EmailAddress</key>
+			<string>ufficioacquisti@federicobollarino.it</string>
+			<key>IncomingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>IncomingMailServerHostName</key>
+			<string>posta.upprovider.it</string>
+			<key>IncomingMailServerPortNumber</key>
+			<integer>995</integer>
+			<key>IncomingMailServerUseSSL</key>
+			<true/>
+			<key>IncomingMailServerUsername</key>
+			<string>ufficioacquisti@federicobollarino.it</string>
+			<key>OutgoingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>OutgoingMailServerHostName</key>
+			<string>posta.upprovider.it</string>
+			<key>OutgoingMailServerPortNumber</key>
+			<integer>465</integer>
+			<key>OutgoingMailServerUseSSL</key>
+			<true/>
+			<key>OutgoingMailServerUsername</key>
+			<string>ufficioacquisti@federicobollarino.it</string>
+			<key>OutgoingPasswordSameAsIncomingPassword</key>
+			<true/>
+			<key>PayloadDescription</key>
+			<string>Configura le impostazioni di posta</string>
+			<key>PayloadDisplayName</key>
+			<string>Ufficio Acquisti</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mail.managed.CC9873BE-0156-49AF-B34A-9E3C8E73D5C9</string>
+			<key>PayloadType</key>
+			<string>com.apple.mail.managed</string>
+			<key>PayloadUUID</key>
+			<string>CC9873BE-0156-49AF-B34A-9E3C8E73D5C9</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PreventAppSheet</key>
+			<true/>
+			<key>SMIMEEnablePerMessageSwitch</key>
+			<false/>
+			<key>SMIMEEnabled</key>
+			<false/>
+			<key>SMIMEEncryptionEnabled</key>
+			<false/>
+			<key>SMIMESigningEnabled</key>
+			<false/>
+			<key>allowMailDrop</key>
+			<false/>
+			<key>disableMailRecentsSyncing</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>EmailAccountDescription</key>
+			<string>Personale</string>
+			<key>EmailAccountName</key>
+			<string>Filippo Bollarino</string>
+			<key>EmailAccountType</key>
+			<string>EmailTypePOP</string>
+			<key>EmailAddress</key>
+			<string>filippo@bollarino.com</string>
+			<key>IncomingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>IncomingMailServerHostName</key>
+			<string>pop3s.aruba.it</string>
+			<key>IncomingMailServerPortNumber</key>
+			<integer>995</integer>
+			<key>IncomingMailServerUseSSL</key>
+			<true/>
+			<key>IncomingMailServerUsername</key>
+			<string>filippo@bollarino.com</string>
+			<key>OutgoingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>OutgoingMailServerHostName</key>
+			<string>smtps.aruba.it</string>
+			<key>OutgoingMailServerPortNumber</key>
+			<integer>465</integer>
+			<key>OutgoingMailServerUseSSL</key>
+			<true/>
+			<key>OutgoingMailServerUsername</key>
+			<string>filippo@bollarino.com</string>
+			<key>OutgoingPasswordSameAsIncomingPassword</key>
+			<true/>
+			<key>PayloadDescription</key>
+			<string>Configura le impostazioni di posta</string>
+			<key>PayloadDisplayName</key>
+			<string>Personale</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mail.managed.19F5471F-BA50-48B3-BF23-B2717A3B713C</string>
+			<key>PayloadType</key>
+			<string>com.apple.mail.managed</string>
+			<key>PayloadUUID</key>
+			<string>19F5471F-BA50-48B3-BF23-B2717A3B713C</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PreventAppSheet</key>
+			<true/>
+			<key>SMIMEEnablePerMessageSwitch</key>
+			<false/>
+			<key>SMIMEEnabled</key>
+			<false/>
+			<key>SMIMEEncryptionEnabled</key>
+			<false/>
+			<key>SMIMESigningEnabled</key>
+			<false/>
+			<key>allowMailDrop</key>
+			<false/>
+			<key>disableMailRecentsSyncing</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>EmailAccountDescription</key>
+			<string>Poli</string>
+			<key>EmailAccountName</key>
+			<string>Filippo Bollarino</string>
+			<key>EmailAccountType</key>
+			<string>EmailTypeIMAP</string>
+			<key>EmailAddress</key>
+			<string>s287670@studenti.polito.it</string>
+			<key>IncomingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>IncomingMailServerHostName</key>
+			<string>imap.studenti.polito.it</string>
+			<key>IncomingMailServerUseSSL</key>
+			<true/>
+			<key>IncomingMailServerUsername</key>
+			<string>s287670@studenti.polito.it</string>
+			<key>OutgoingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>OutgoingMailServerHostName</key>
+			<string>smtp.studenti.polito.it</string>
+			<key>OutgoingMailServerPortNumber</key>
+			<integer>465</integer>
+			<key>OutgoingMailServerUseSSL</key>
+			<true/>
+			<key>OutgoingMailServerUsername</key>
+			<string>s287670@studenti.polito.it</string>
+			<key>OutgoingPasswordSameAsIncomingPassword</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>Mail</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mail.managed.307574B1-E61B-456D-B974-87BF9CC4E879</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.apple.mail.managed</string>
+			<key>PayloadUUID</key>
+			<string>307574B1-E61B-456D-B974-87BF9CC4E879</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PreventAppSheet</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>AccountDescription</key>
+			<string>Gmail</string>
+			<key>AccountName</key>
+			<string>Filippo Bollarino</string>
+			<key>EmailAddress</key>
+			<string>filobollarino@gmail.com</string>
+			<key>PayloadDescription</key>
+			<string>Configura un account di Google</string>
+			<key>PayloadDisplayName</key>
+			<string>Account di Google</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.google-oauth.E262DC5B-64B2-4C61-979D-2F268D563C2B</string>
+			<key>PayloadType</key>
+			<string>com.apple.google-oauth</string>
+			<key>PayloadUUID</key>
+			<string>E262DC5B-64B2-4C61-979D-2F268D563C2B</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
 	<string>Mail</string>
@@ -114,7 +254,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>14D4FFA9-DAEB-4C00-8F3B-28B70E8A9F9F</string>
+	<string>71191F16-6224-45F1-96A9-334B6A43C7BF</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
