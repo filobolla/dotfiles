@@ -70,12 +70,13 @@ git clone https://github.com/filobolla/dotfiles.git
 - Digilent Waveforms
 - VirtualDJ + Hercules drivers
 - Adobe CS5 or CC
+	> For Adobe CC see `adobe-packager` for downloading older packges (2020 edition works on M1) and patch them with Adobe Zii (use Zii 5.3.2)
 - Wacom driver
 
 ## TODO
 - Make this install idempotent
-	> Divide scripts into functions and recall them in `deploy.sh`
-- Make these dotfiles cross-platform (macOS and Linux)
+	> Divide scripts into separate files and recall them in `deploy.sh`
+- Make shell dotfiles cross-platform (macOS, Linux and Windows terminal)
 
 ## Thanks to
 - Mathias Bynens' dotfiles and aliases https://github.com/mathiasbynens/dotfiles 

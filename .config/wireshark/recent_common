@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 3.4.3.
+# Common recent settings file for Wireshark 3.6.0.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -12,21 +12,21 @@
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: tcp.stream eq 86
+recent.display_filter: !arp && !mdns && !db-lsp-disc && !dns
+recent.display_filter: !arp && !mdns && !db-lsp-disc
+recent.display_filter: !arp && !mdns && !db-lsp
+recent.display_filter: !arp && !mdns
+recent.display_filter: !arp && !dns
+recent.display_filter: !arp
 recent.display_filter: ip.addr==192.168.3.127
 recent.display_filter: ip.addr==mil04s03-in-f14.1e100.net
 recent.display_filter: ip.addr==youtube.com
-recent.display_filter: ip.addr==1.1.1.1
-recent.display_filter: ip.addr==8.8.8.8
-recent.display_filter: ip.addr==192.168.3.122
-recent.display_filter: ip.addr == 1.1.1.1
-recent.display_filter: dns
-recent.display_filter: http
-recent.display_filter: wol
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 36
-gui.geometry_main_y: 253
+gui.geometry_main_x: 50
+gui.geometry_main_y: 51
 gui.geometry_main_width: 1274
 gui.geometry_main_height: 754
 
@@ -76,6 +76,15 @@ gui.search_case_sensitive: FALSE
 # Find packet search type.
 # One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
 gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 253
+gui.geom.FollowStreamDialog.y: 39
+gui.geom.FollowStreamDialog.width: 849
+gui.geom.FollowStreamDialog.height: 754
+# TRUE or FALSE (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: FALSE
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.
