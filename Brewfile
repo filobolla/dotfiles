@@ -11,18 +11,18 @@ brew "bash-completion"
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Tool Command Language
-brew "tcl-tk"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Package for scientific computing with Python
+brew "numpy"
+# Tool Command Language
+brew "tcl-tk"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
-# Mozilla CA certificate store
-brew "ca-certificates"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Utilities for converting macOS DMG images
@@ -83,6 +83,8 @@ brew "tree"
 brew "wakeonlan"
 # Internet file retriever
 brew "wget"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Application uninstaller
@@ -97,28 +99,38 @@ cask "bitwarden"
 cask "brave-browser"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Server and cloud storage browser
+cask "cyberduck"
 # Disk space visualizer
 cask "daisydisk"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Voice and text chat software
+cask "discord"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Free and open-source media player
 cask "iina"
+# Keyboard customizer
+cask "karabiner-elements"
 # Password manager compatible with KeePass
 cask "keeweb"
 # Audio tagger focusing on efficiency
 cask "kid3"
 # Tool for designing and simulating digital logic circuits
 cask "logisim"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
 # Warns about malware, adware and spyware
 cask "malwarebytes"
 # Open-source code snippets manager for developers
 cask "masscode"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Office suite
+cask "microsoft-office"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Meet, chat, call, and collaborate in just one place
@@ -128,21 +140,27 @@ cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 cask "parsec"
-# QuickLook plug-in that renders source code with syntax highlighting
-cask "qlcolorcode"
 cask "scidavis"
 # Video chat, voice call and instant messaging application
 cask "skype"
+# Quicklook extension for source files
+cask "syntax-highlight"
+# Remote access and connectivity software focused on security
+cask "teamviewer"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
+# Free and open-source OpenVPN client
+cask "tunnelblick"
 # Configurable document editor that supports Markdown
 cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Video communication and virtual meeting platform
+cask "webex"
 # Network protocol analyzer
 cask "wireshark"
 # Open-source version of the X.Org X Window System
@@ -150,11 +168,8 @@ cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Apple Configurator 2", id: 1037126344
-mas "EasyFind", id: 411673888
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Shazam", id: 897118787
-mas "Todoist", id: 585829637
