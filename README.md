@@ -61,6 +61,7 @@ git clone https://github.com/filobolla/dotfiles.git
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
 - Import desktop pictures
+	> In Big Sur+, images are in ~/Library/Application Support/com.apple.mobileassetDesktopPicture
 	> Add `wallpaper` folder to $HOME and set hidden flag
 	> use `background.sh` to setup slideshow
 
