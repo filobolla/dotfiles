@@ -12,7 +12,7 @@ tell application "System Events"
 	repeat with desktopNum from 1 to allDesktops
 		get desktopNum
 		tell desktop desktopNum
-			set pictures folder to "/Users/filippo/dotfiles/backgrounds"
+			set pictures folder to "${HOME}/Wallpapers"
 			set picture rotation to 1 -- time interval 
 			set change interval to 300 
 			set random order to true
