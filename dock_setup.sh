@@ -12,7 +12,7 @@ APPLE_ARCH=$(uname -m)
 APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Terminal" "TextEdit" "Activity Monitor" "Microsoft Teams" "Telegram" "Typora" "Microsoft Remote Desktop");
 # For legacy systems, all apps are in /Applications, in Big Sur universal apps are in /System/Applications
 
-# Empty Dock persisten apps
+# Empty Dock persistent apps
 defaults write com.apple.dock persistent-apps -array
 
 # Add apps to the Dock

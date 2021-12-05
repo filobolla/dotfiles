@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Setup Terminal theme
 osascript << EOD
@@ -60,6 +60,10 @@ else
 	echo -e "massCode not installed, skipping import...\n"
 fi
 
+# - Import wallpapers and setup
+rsync -auhP "/Volumes/PUblic/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
+
+source wallpaper.sh
 # - Import mail folders
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
