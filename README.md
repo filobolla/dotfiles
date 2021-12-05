@@ -23,7 +23,8 @@ git clone https://github.com/filobolla/dotfiles.git
 ``` bash
 sudo systemsetup -setremotelogin on
 ```
-> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
+
+	> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
 
 ## Things to implement in these dotfiles
 ### System
