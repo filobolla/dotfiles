@@ -50,41 +50,17 @@ if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null
 	## IMPORTANT: check permissions after import and set them accordingly
 	cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 else
-	echo "Cyberduck not installed, skipping import...\n"
+	echo -e "Cyberduck not installed, skipping import...\n"
 fi
 
 # - Import massCode database
 if test $(find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null); then
 	cp -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
 else
-	echo "massCode not installed, skipping import...\n"
+	echo -e "massCode not installed, skipping import...\n"
 fi
 
 # - Import mail folders
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
 #cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
 
-# - Setup tunnelblick connections
-TUNNELBLICK_FOLDER="/Users/filippo/Library/Application Support/Tunnelblick/Configurations"
-if test -d "$TUNNELBLICK_FOLDER"; then
-        mkdir -p "$TUNNELBLICK_FOLDER"
-fi
-mkdir -p "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources"
-mkdir -p "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources"
-chmod -R 750 "${TUNNELBLICK_FOLDER}/"*.tblk
-
-# Import config for Casa 
-cp "/Volumes/Public/Filippo/dotfiles_backup/vpn_config/filippo.ovpn" "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/"
-mv "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/filippo.ovpn" "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/config.ovpn" && chmod 740 "${TUNNELBLICK_FOLDER}/Casa.tblk/Contents/Resources/config.ovpn"
-# Import config for Ufficio 
-cp "/Volumes/Public/Filippo/dotfiles_backup/vpn_config/openvpn_ufficio/VPNConfig.ovpn" "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/"
-mv "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/VPNConfig.ovpn" "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/config.ovpn" && chmod 740 "${TUNNELBLICK_FOLDER}/Ufficio.tblk/Contents/Resources/config.ovpn"
-
-# Create network location for interfacing with RPi without router
-sudo networksetup -createlocation "RPi First Connect" populate
-sudo networksetup -switchlocation "RPi First Connect"
-# Setup manual IPs for wired and WLAN interfaces
-sudo networksetup -setmanual "Ethernet Thunderbolt" 192.168.100.201 255.255.255.0 192.168.100.1
-sudo networksetup -setmanual "WiFi" 192.168.100.200 255.255.255.0 192.168.100.1
-# Return to the automatic location
-sudo networksetup -switchtolocation "Automatic"
