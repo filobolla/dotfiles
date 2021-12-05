@@ -18,19 +18,19 @@ esac
 
 # Install Homebrew Package Manager
 if ! which brew > /dev/null; then
-	echo "Installing Homebrew...\n"
+	echo -e "Installing Homebrew...\n"
 	true | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	if [ "$APPLE_ARCH" = "arm64" ]; then
 		# Add /opt/homebrew/bin to PATH in order to invoke brew
 		export PATH="/opt/homebrew/bin:${PATH}"
 	fi
 else
-	echo "Homebrew already installed, skipping...\n"
+	echo -e "Homebrew already installed, skipping...\n"
 fi
 
 # Update and install apps via Homebrew with Brewfile
 brew update
-echo "Installing favorite apps from Brewfile...\n"
+echo -e "Installing favorite apps from Brewfile...\n"
 brew bundle install -v
 
 # Check if everything is installed and up to date
@@ -40,20 +40,21 @@ brew bundle check --verbose
 brew cleanup --prune=all
 
 # Setup macos defaults
-echo "Setup macOS system preferences with defaults...\n"
+echo -e "Setup macOS system preferences with defaults...\n"
 source defaults.sh
 
 # Add items to the dock
-echo "Add favorite apps to the Dock...\n"
+echo -e "Add favorite apps to the Dock...\n"
 source dock.sh
 
 # Apply app-specific customizations (Bookmarks, Extensions, etc.)
-echo "Customize some apps...\n"
+echo -e "Customize some apps...\n"
 source app_setup.sh
 
 # Link dotfiles in the HOME folder
-echo "Linking dotfiles in the \$HOME folder...\n"
+echo -e "Linking dotfiles in the \$HOME folder...\n"
 for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
 	ln -s "$DOTFILES_FOLDER/${file}" "$HOME/${file}"
 done
 
+echo -e "Done. Note that some of these changes require a logout/restart to take effect. \n"

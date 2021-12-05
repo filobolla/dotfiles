@@ -17,7 +17,8 @@ xcode-select --install
 git clone https://github.com/filobolla/dotfiles.git
 ```
 4. Run `deploy.sh` and provide sudo password
-
+5. Setup Mail accounts with `Mail.mobileconfig` profile
+	> Import POP folders afterwards
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
