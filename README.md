@@ -19,6 +19,13 @@ git clone https://github.com/filobolla/dotfiles.git
 4. Run `deploy.sh` and provide sudo password
 5. Setup Mail accounts with `Mail.mobileconfig` profile
 	> Import POP folders afterwards
+6. Enable remote login and remote screen to access Mac headless
+``` bash
+sudo systemsetup -setremotelogin on
+```
+	> To enable Screen Access use System Preferences, otherwise look for
+`/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
+
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
