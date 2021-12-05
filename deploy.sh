@@ -51,6 +51,9 @@ source dock.sh
 echo -e "Customize some apps...\n"
 source app_setup.sh
 
+# Download syscripts repo in $HOME
+git clone http://github.com/filobolla/syscripts.git "${HOME}"
+
 # Link dotfiles in the HOME folder
 echo -e "Linking dotfiles in the \$HOME folder...\n"
 for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
