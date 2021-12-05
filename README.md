@@ -20,11 +20,10 @@ git clone https://github.com/filobolla/dotfiles.git
 5. Setup Mail accounts with `Mail.mobileconfig` profile
 	> Import POP folders afterwards
 6. Enable remote login and remote screen to access Mac headless
+	> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
 ``` bash
 sudo systemsetup -setremotelogin on
 ```
-
-	> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
 
 ## Things to implement in these dotfiles
 ### System
@@ -46,7 +45,6 @@ sudo systemsetup -setremotelogin on
 	Search for post-install scripts for Homebrew
 - Redo Homebrew env variables
 	> Set `brew update` time interval to 2 weeks
-- Enable remote login and management (ssh and vnc) through `systemsetup`
 - (Change BSD with GNU binaries)
 - (Change launchpad grid if screen is bigger)
 - (Automate launchpad app ordering and folder creations)
@@ -69,9 +67,9 @@ sudo systemsetup -setremotelogin on
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
 - Import desktop pictures
-	> In Big Sur+, images are in ~/Library/Application Support/com.apple.mobileassetDesktopPicture
-	> Add `wallpaper` folder to $HOME and set hidden flag
-	> use `background.sh` to setup slideshow
+	> - In Big Sur+, images are in ~/Library/Application Support/com.apple.mobileassetDesktopPicture
+	> - Add `Wallpapers` folder to $HOME and set hidden flag
+	> - Use `wallpaper.sh` to setup slideshow
 
 ### App to be installed manually (`installer`)
 - Cinema 4D + Vray
