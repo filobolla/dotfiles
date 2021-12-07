@@ -61,7 +61,7 @@ else
 fi
 
 # - Import wallpapers and setup
-rsync -auhP "/Volumes/PUblic/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
+rsync -auhP "/Volumes/Public/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
 
 source wallpaper.sh
 # - Import mail folders
