@@ -40,7 +40,7 @@ EOD
 cat Codefile | xargs -n 1 code --install-extension
 
 # Check if the Public folder is mounted to import the needed files
-if ! test -d /Volumes/Public; then
+if ! test -d "/Volumes/Public"; then
 	open 'smb://filippo@casabolla-nas/Public' # NEEDS PASSWORD!
 fi
 
@@ -48,20 +48,20 @@ fi
 # Check if Cyberduck is running, then move Bookmark folder
 if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app"); then
 	## IMPORTANT: check permissions after import and set them accordingly
-	rsync -auhP /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
+	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks" "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 else
 	echo -e "Cyberduck not installed, skipping import...\n"
 fi
 
 # - Import massCode database
 if test $(find /Applications -type d -maxdepth 1 -name "massCode.app"); then
-	rsync -auhP -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
+	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/massCode" "${HOME}/"
 else
 	echo -e "massCode not installed, skipping import...\n"
 fi
 
 # - Import wallpapers and setup
-rsync -auhP "/Volumes/Public/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
+rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
 
 source wallpaper.sh
 # - Import mail folders
