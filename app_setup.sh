@@ -46,7 +46,7 @@ fi
 
 # - Import Cyberduck bookmarks
 # Check if Cyberduck is running, then move Bookmark folder
-if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app">/dev/null); then
+if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app"); then
 	## IMPORTANT: check permissions after import and set them accordingly
 	cp /Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 else
@@ -54,7 +54,7 @@ else
 fi
 
 # - Import massCode database
-if test $(find /Applications -type d -maxdepth 1 -name "massCode.app">/dev/null); then
+if test $(find /Applications -type d -maxdepth 1 -name "massCode.app"); then
 	cp -R /Volumes/Public/Filippo/dotfiles_backup/massCode "${HOME}/"
 else
 	echo -e "massCode not installed, skipping import...\n"
