@@ -1,5 +1,7 @@
 #!/bin/bash
 
+APPLE_ARCH=$(uname -m)
+
 #############
 # Shell env #
 #############
