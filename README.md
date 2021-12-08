@@ -18,7 +18,8 @@ git clone https://github.com/filobolla/dotfiles.git
 ```
 4. Run `deploy.sh` and provide sudo password
 5. Setup Mail accounts with `Mail.mobileconfig` profile
-	> Import POP folders afterwards
+	> - Import POP folders afterwards: delete Mail-Index-* toapply import settings
+	> - Enable "Delete after move from Inbox" for POP
 6. Enable remote login and remote screen to access Mac headless
 	> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
 ``` bash
@@ -60,14 +61,13 @@ sudo systemsetup -setremotelogin on
 - Setup file associations
 - Import MassCode snippets database
 - Add Tunnelblick connections
-	> Made procedure in `app_setup.sh`
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 	> Only needed in <11.0
 - Setup Widgets in sidebar
 - Manage menubar items (battery,tmutil, etc.)
 - Import desktop pictures
-	> - In Big Sur+, images are in ~/Library/Application Support/com.apple.mobileassetDesktopPicture
+	> - In Monterey, images are in ~/Library/Application Support/com.apple.mobileassetDesktopPicture
 	> - Add `Wallpapers` folder to $HOME and set hidden flag
 	> - Use `wallpaper.sh` to setup slideshow
 
@@ -81,6 +81,8 @@ sudo systemsetup -setremotelogin on
 - Wacom driver
 
 ## TODO
+- Add .DS_Store cleanup before running `defaults.sh` (view options are overwritten by .DS_Store)
+	> Also clean attributes with xattr (in Big Sur can't overwrite _nohidden_ flag)
 - Make this install idempotent
 	> Divide scripts into separate files and recall them in `deploy.sh`
 - Make shell dotfiles cross-platform (macOS, Linux and Windows terminal)
