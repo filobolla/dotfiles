@@ -26,4 +26,5 @@ arrName=($(echo "$names" | sed 's/ /-/g' | sed 's/\,-/ /g'))
 
 for index in "${!arrName[@]}"; do
 	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Mail/${arrName[index]}/" "${paths[index]}/" --dry-run
+	rm -f "${HOME}/Library/Mail/"V*"/MailData/Envelope "Index*
 done
