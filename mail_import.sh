@@ -21,10 +21,14 @@ tell application "Mail"
 end tell
 EOD
 )
+
+# Close Mail before import
+osascript -e 'tell application "Mail" to quit'
+
 # Add dash to name space to declare a space-separated array
 arrName=($(echo "$names" | sed 's/ /-/g' | sed 's/\,-/ /g'))
 
 for index in "${!arrName[@]}"; do
-	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Mail/${arrName[index]}/" "${paths[index]}/" --dry-run
-	rm -f "${HOME}/Library/Mail/"V*"/MailData/Envelope "Index*
+	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Mail/${arrName[index]}/" "${paths[index]}/" --delete-after --dry-run
+	#rm -f "${HOME}/Library/Mail/"V*"/MailData/Envelope "Index*
 done
