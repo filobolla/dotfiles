@@ -25,5 +25,5 @@ EOD
 arrName=($(echo "$names" | sed 's/ /-/g' | sed 's/\,-/ /g'))
 
 for index in "${!arrName[@]}"; do
-	rsync -auhP --exclude="Deleted*.mbox" "${paths[index]}/" "/Volumes/Public/Filippo/dotfiles_backup/Mail/${arrName[index]}/"
+	rsync -auhP --exclude="Deleted*.mbox" --exclude="Drafts.mbox" "${paths[index]}/" "/Volumes/Public/Filippo/dotfiles_backup/Mail/${arrName[index]}/" --delete-excluded --delete-after
 done

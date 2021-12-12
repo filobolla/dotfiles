@@ -222,26 +222,6 @@
 			<key>PreventAppSheet</key>
 			<true/>
 		</dict>
-		<dict>
-			<key>AccountDescription</key>
-			<string>Gmail</string>
-			<key>AccountName</key>
-			<string>Filippo Bollarino</string>
-			<key>EmailAddress</key>
-			<string>filobollarino@gmail.com</string>
-			<key>PayloadDescription</key>
-			<string>Configura un account di Google</string>
-			<key>PayloadDisplayName</key>
-			<string>Account di Google</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.google-oauth.E262DC5B-64B2-4C61-979D-2F268D563C2B</string>
-			<key>PayloadType</key>
-			<string>com.apple.google-oauth</string>
-			<key>PayloadUUID</key>
-			<string>E262DC5B-64B2-4C61-979D-2F268D563C2B</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
 	<string>Mail</string>
@@ -254,7 +234,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>71191F16-6224-45F1-96A9-334B6A43C7BF</string>
+	<string>37BDB7DB-D681-4E5B-B2F7-0D6A4FB31073</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
