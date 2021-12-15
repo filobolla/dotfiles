@@ -17,6 +17,7 @@ xcode-select --install
 git clone https://github.com/filobolla/dotfiles.git
 ```
 4. Run `deploy.sh` and provide sudo password
+	> To avoid problems, mount the smb share before running
 5. Setup Mail accounts with `Mail.mobileconfig` profile
 	> - Import POP folders afterwards: delete Mail-Index-* to apply import settings
 	> - Enable "Delete after move from Inbox" for POP only on main Mac
@@ -44,23 +45,21 @@ sudo systemsetup -setremotelogin on
 - Remove `com.apple.quarantine` with `xattr`
 	> Remove from `defaults.sh` the relative line  
 	Search for post-install scripts for Homebrew
-- Redo Homebrew env variables
-	> Set `brew update` time interval to 2 weeks
 - (Change BSD with GNU binaries)
 - (Change launchpad grid if screen is bigger)
 - (Automate launchpad app ordering and folder creations)
 
 ## Things to do manually
-- Sync Brave bookmarks, settings and extensions
-- Import Cyberduck bookmarks
+- Sync Brave bookmarks, settings and extensions via sync code
+- Import Cyberduck bookmarks and massCode snippets
+	> Done in `app_setup.sh`
 - Import Mail folder
-	> - Also needed to copy `com.apple.mail.plist` and Accounts folder  
 	> - Setup with AppleScript mail accounts, then import POP mailboxes
-- Setup Finder favorites
+- Setup Finder favorites and Downloads folder view
 - Setup Privacy options
 - Setup file associations
-- Import MassCode snippets database
 - Add Tunnelblick connections
+	> Done in `tunnelblick.sh`
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 	> Only needed in <11.0
