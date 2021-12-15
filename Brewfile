@@ -119,8 +119,6 @@ cask "karabiner-elements"
 cask "keeweb"
 # Audio tagger focusing on efficiency
 cask "kid3"
-# Tool for designing and simulating digital logic circuits
-cask "logisim"
 # Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
 # Warns about malware, adware and spyware
