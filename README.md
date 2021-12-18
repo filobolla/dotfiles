@@ -26,7 +26,8 @@ git clone https://github.com/filobolla/dotfiles.git
 ``` bash
 sudo systemsetup -setremotelogin on
 ```
-
+7. Add backup routines to maintain massCode, Cyberduck, and Mail up to date on every device
+	> see `launchctl`
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
