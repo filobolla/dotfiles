@@ -55,6 +55,8 @@ brew "libyaml"
 brew "mas"
 # Realtime console network usage monitor
 brew "nload"
+# Port scanning utility for large networks
+brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
 # Emulator for x86 and PowerPC
@@ -161,6 +163,8 @@ cask "vlc"
 cask "webex"
 # Network protocol analyzer
 cask "wireshark"
+# Remote desktop software
+cask "x2goclient"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Video communication and virtual meeting platform
