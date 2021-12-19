@@ -20,6 +20,7 @@ git clone https://github.com/filobolla/dotfiles.git
 	> To avoid problems, mount the smb share before running
 5. Setup Mail accounts with `Mail.mobileconfig` profile
 	> - Import POP folders afterwards: delete Mail-Index-* to apply import settings
+	> - Gmail account can't be configured with profiles, add manually
 	> - Enable "Delete after move from Inbox" for POP only on main Mac
 6. Enable remote login and remote screen to access Mac headless
 	> To enable Screen Access use System Preferences, otherwise look for `/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart`
