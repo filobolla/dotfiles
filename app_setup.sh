@@ -47,7 +47,6 @@ fi
 # - Import Cyberduck bookmarks
 # Check if Cyberduck is running, then move Bookmark folder
 if test $(find /Applications -type d -maxdepth 1 -name "Cyberduck.app"); then
-	## IMPORTANT: check permissions after import and set them accordingly
 	rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks" "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/"
 else
 	echo -e "Cyberduck not installed, skipping import...\n"
@@ -64,7 +63,3 @@ fi
 rsync -auhP --exclude=".DS_Store" "/Volumes/Public/Filippo/dotfiles_backup/Wallpapers" "${HOME}/"
 
 source wallpaper.sh
-# - Import mail folders
-#cp -R /Volumes/Public/Filippo/dotfiles_backup/Mail/V6 ${HOME}/Library/Mail/
-#cp -R /Volumes/Public/Filippo/dotfiles_backup/Accounts ${HOME}/Library/
-
