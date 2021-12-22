@@ -1,5 +1,5 @@
 # dotfiles
-Dotfiles to be deployed to macOS and (to some extent) *NIX machines
+Dotfiles to be deployed to macOS 
 
 ## Installation
 0. (Login into App Store in order to use `mas`)
@@ -28,7 +28,7 @@ git clone https://github.com/filobolla/dotfiles.git
 sudo systemsetup -setremotelogin on
 ```
 7. Add backup routines to maintain massCode, Cyberduck, and Mail up to date on every device
-	> see `launchctl`
+	> The trusted souce is the home Mac, the laptop is synced to this
 ## Things to implement in these dotfiles
 ### System
 - Use dot instead of comma as decimal separator
@@ -55,13 +55,10 @@ sudo systemsetup -setremotelogin on
 - Sync Brave bookmarks, settings and extensions via sync code
 - Import Cyberduck bookmarks and massCode snippets
 	> Done in `app_setup.sh`
-- Import Mail folder
-	> - Setup with AppleScript mail accounts, then import POP mailboxes
+- Import Mail accounts with profiles
 - Setup Finder favorites and Downloads folder view
 - Setup Privacy options
 - Setup file associations
-- Add Tunnelblick connections
-	> Done in `tunnelblick.sh`
 - Import ssh keys
 - Enable "Open terminal in folder" quick action
 	> Only needed in <11.0
