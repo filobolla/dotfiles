@@ -4,13 +4,13 @@
 if test ! -d "/Volumes/Public" ; then
 pw=$(security 2>&1 >/dev/null find-internet-password -a filippo -l "CasaBolla-NAS" -g | cut -d'"' -f2)
 
-open 'smb://filippo:'"${pw}"'@casabolla-nas/Public'
+open -g 'smb://filippo:'"${pw}"'@casabolla-nas/Public'
 # unset variable to avoid pw leaks
 unset pw
 
+sleep 2
 fi
 
-sleep 2
 # If folder continues to be missing, abort
 if test ! -d "/Volumes/Public" ; then
 	echo "Public folder continues to be missing, aborting backup..."
