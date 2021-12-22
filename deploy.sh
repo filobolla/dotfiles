@@ -60,4 +60,10 @@ for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
 	ln -s "$DOTFILES_FOLDER/${file}" "$HOME/${file}"
 done
 
+# Link launchd jobs to LaunchAgents folder
+echo -e "Linking launchd jobs to LaunchAgents folder...\n"
+for job in "$DOTFILES_FOLDER/jobs/*.plist"; do
+	ln -s "$DOTFILES_FOLDER/jobs/${job}" "$HOME/Library/LaunchAgents/${job}"
+done
+
 echo -e "Done. Note that some of these changes require a logout/restart to take effect. \n"
