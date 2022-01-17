@@ -9,7 +9,7 @@
 
 APPLE_ARCH=$(uname -m)
 # App paths list
-APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Terminal" "TextEdit" "Activity Monitor" "Microsoft Teams" "Telegram" "Typora" "Microsoft Remote Desktop");
+APP_LIST=("Brave Browser" "Mail" "Notes" "Visual Studio Code" "Terminal" "TextEdit" "Activity Monitor" "Microsoft Teams" "Telegram" "Mark Text" "Microsoft Remote Desktop");
 # For legacy systems, all apps are in /Applications, in Big Sur universal apps are in /System/Applications
 
 # Empty Dock persistent apps
