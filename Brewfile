@@ -59,6 +59,8 @@ brew "nload"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Find duplicate files based on content (NOT file names)
@@ -125,6 +127,7 @@ cask "kid3"
 cask "macs-fan-control"
 # Warns about malware, adware and spyware
 cask "malwarebytes"
+cask "mark-text"
 # Open-source code snippets manager for developers
 cask "masscode"
 # Provides updates to various Microsoft products
@@ -153,8 +156,8 @@ cask "telegram"
 cask "the-unarchiver"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
-# Configurable document editor that supports Markdown
-cask "typora"
+# Virtual machines UI using QEMU
+cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
