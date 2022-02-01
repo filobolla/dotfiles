@@ -12,16 +12,16 @@
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: udp
+recent.display_filter: tcp.stream eq 10
+recent.display_filter: tcp.port==23
+recent.display_filter: tcp.port==21
+recent.display_filter: ip.addr==192.168.3.108 && tcp.port==81
+recent.display_filter: ip.addr==192.168.3.108 
+recent.display_filter: ip.addr==192.168.3.108 && dns
+recent.display_filter: ip.addr==192.168.3.108
 recent.display_filter: tcp.stream eq 86
 recent.display_filter: !arp && !mdns && !db-lsp-disc && !dns
-recent.display_filter: !arp && !mdns && !db-lsp-disc
-recent.display_filter: !arp && !mdns && !db-lsp
-recent.display_filter: !arp && !mdns
-recent.display_filter: !arp && !dns
-recent.display_filter: !arp
-recent.display_filter: ip.addr==192.168.3.127
-recent.display_filter: ip.addr==mil04s03-in-f14.1e100.net
-recent.display_filter: ip.addr==youtube.com
 
 # Main window geometry.
 # Decimal numbers.

@@ -23,6 +23,10 @@ brew "numpy"
 brew "tcl-tk"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
+# Platform built on V8 to build network applications
+brew "node"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Utilities for converting macOS DMG images
@@ -41,6 +45,8 @@ brew "ffmpeg"
 brew "figlet"
 # Improved top (interactive process viewer)
 brew "htop"
+# Configurable static site generator
+brew "hugo"
 # Display an interface's bandwidth usage
 brew "iftop"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
@@ -57,8 +63,6 @@ brew "mas"
 brew "nload"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Emulator for x86 and PowerPC
