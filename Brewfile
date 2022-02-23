@@ -17,10 +17,14 @@ brew "cairo"
 brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Library for complex text layout
+brew "libraqm"
 # Package for scientific computing with Python
 brew "numpy"
 # Tool Command Language
 brew "tcl-tk"
+# Friendly PIL fork (Python Imaging Library)
+brew "pillow"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # Platform built on V8 to build network applications
@@ -37,6 +41,8 @@ brew "entr"
 brew "exiftool"
 # Identify or delete duplicate files
 brew "fdupes"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Play, record, convert, and stream audio and video
@@ -95,6 +101,8 @@ brew "wget"
 cask "adobe-creative-cloud"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
+# Android SDK component
+cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
 # Electronics prototyping platform
@@ -147,6 +155,7 @@ cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 cask "parsec"
+# Application for scientific data analysis and visualization
 cask "scidavis"
 # Video chat, voice call and instant messaging application
 cask "skype"

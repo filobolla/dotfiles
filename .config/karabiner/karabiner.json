@@ -236,6 +236,16 @@
                         },
                         {
                             "from": {
+                                "key_code": "f1"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "power"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
                                 "key_code": "keypad_num_lock"
                             },
                             "to": [
@@ -251,16 +261,6 @@
                             "to": [
                                 {
                                     "key_code": "period"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "f1"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "power"
                                 }
                             ]
                         }
