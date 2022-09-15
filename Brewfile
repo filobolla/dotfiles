@@ -95,7 +95,7 @@ brew "nmap"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
+brew "python@3.10", link: false
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tools for and transforming and inspecting PDF files
@@ -162,6 +162,8 @@ cask "discord"
 cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
+# Web browser
+cask "firefox"
 # Free and open-source media player
 cask "iina"
 # Keyboard customizer
