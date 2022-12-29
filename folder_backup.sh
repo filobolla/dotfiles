@@ -22,8 +22,8 @@ rsync -auhP --exclude=backups/ --exclude=".DS_Store" "$HOME/massCode/" "/Volumes
 
 # Backup Cyberduck bookmarks
 echo -e "Backup Cyberduck favorites... \n"
-rsync -auhP --exclude=".DS_Store" "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Bookmarks/" "/Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks" --delete
-
+rsync -auhP --exclude=".DS_Store" "${HOME}/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Bookmarks/" "/Volumes/Public/Filippo/dotfiles_backup/Cyberduck/Bookmarks" --delete \
+&& \
 osascript -e 'display notification "Backup is completed" with title "Important folders Backup"'
 
 fi

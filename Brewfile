@@ -4,22 +4,28 @@ tap "homebrew/cask-drivers"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "martido/graph"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Vector graphics library with cross-device output support
 brew "cairo"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Library for complex text layout
 brew "libraqm"
 # Package for scientific computing with Python
@@ -44,12 +50,18 @@ brew "entr"
 brew "exiftool"
 # Identify or delete duplicate files
 brew "fdupes"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Image processing and image analysis library
+brew "leptonica"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
+# Blu-Ray disc playback library for media players like VLC
+brew "libbluray"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
@@ -58,8 +70,22 @@ brew "ffmpeg"
 brew "open-mpi"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Library for encoding and decoding .avif files
+brew "libavif"
+# Graphics library to dynamically manipulate images
+brew "gd"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Command-driven, interactive function plotting
 brew "gnuplot"
+# Image manipulation
+brew "netpbm"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Improved top (interactive process viewer)
@@ -68,6 +94,10 @@ brew "htop"
 brew "hugo"
 # Display an interface's bandwidth usage
 brew "iftop"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
@@ -92,10 +122,10 @@ brew "ngspice"
 brew "nload"
 # Port scanning utility for large networks
 brew "nmap"
+# Development kit for the Java programming language
+brew "openjdk"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10", link: false
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tools for and transforming and inspecting PDF files
@@ -128,14 +158,16 @@ brew "tree"
 brew "wakeonlan"
 # Internet file retriever
 brew "wget"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
+# Inspect application bundles
+cask "apparency"
 # Application uninstaller
 cask "appcleaner"
 # Electronics prototyping platform
@@ -164,6 +196,8 @@ cask "dropbox"
 cask "dupeguru"
 # Web browser
 cask "firefox"
+# Open-source video transcoder
+cask "handbrake"
 # Free and open-source media player
 cask "iina"
 # Keyboard customizer
@@ -198,6 +232,8 @@ cask "obsidian"
 cask "onyx"
 # Remote desktop
 cask "parsec"
+# QuickLook generator for Markdown files
+cask "qlmarkdown"
 # Application for scientific data analysis and visualization
 cask "scidavis"
 # Video chat, voice call and instant messaging application
@@ -222,14 +258,13 @@ cask "vlc"
 cask "webex"
 # Network protocol analyzer
 cask "wireshark"
-# Remote desktop software
-cask "x2goclient"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+# Application for configuring any YubiKey
+cask "yubico-yubikey-manager"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Apple Configurator", id: 1037126344
-mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
