@@ -12,10 +12,10 @@ brew "jpeg-xl"
 brew "aom"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
-# Programmable completion for Bash 3.2
-brew "bash-completion"
 # Core application library for C
 brew "glib"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Interpreted, interactive, object-oriented programming language
@@ -24,16 +24,18 @@ brew "python@3.9"
 brew "cairo"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Library for complex text layout
 brew "libraqm"
 # Package for scientific computing with Python
 brew "numpy"
-# Tool Command Language
-brew "tcl-tk"
 # Friendly PIL fork (Python Imaging Library)
 brew "pillow"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # Platform built on V8 to build network applications
@@ -58,10 +60,14 @@ brew "unbound"
 brew "gnutls"
 # Image processing and image analysis library
 brew "leptonica"
+# Multi-format archive and compression library
+brew "libarchive"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Blu-Ray disc playback library for media players like VLC
 brew "libbluray"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
@@ -78,8 +84,8 @@ brew "gd"
 brew "gdk-pixbuf"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
-# Framework for layout and rendering of i18n text
-brew "pango"
+# Cross-platform application and UI framework
+brew "qt@5"
 # Command-driven, interactive function plotting
 brew "gnuplot"
 # Image manipulation
@@ -88,6 +94,8 @@ brew "netpbm"
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# GUI for rsync
+brew "grsync"
 # Improved top (interactive process viewer)
 brew "htop"
 # Configurable static site generator
@@ -138,6 +146,8 @@ brew "rename"
 brew "rmlint"
 # File system snapshot utility (based on rsync)
 brew "rsnapshot"
+# Utility that provides fast incremental file transfer
+brew "rsync"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Get, set, and list display resolution
