@@ -114,8 +114,6 @@ brew "iperf3"
 brew "jhead"
 # Prints information and tests integrity of JPEG/JFIF files
 brew "jpeginfo"
-# Spice circuit simulator as shared library
-brew "libngspice"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # YAML Parser
@@ -124,8 +122,6 @@ brew "libyaml"
 brew "mas"
 # NCurses Disk Usage
 brew "ncdu"
-# Spice circuit simulator
-brew "ngspice"
 # Realtime console network usage monitor
 brew "nload"
 # Port scanning utility for large networks
