@@ -177,7 +177,7 @@ cask "apparency"
 # Application uninstaller
 cask "appcleaner"
 # Electronics prototyping platform
-cask "arduino"
+cask "arduino-ide"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
