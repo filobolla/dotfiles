@@ -4,8 +4,13 @@
 	<dict>
 		<key>Label</key>
 		<string>local.mail-backup</string>
-		<key>Program</key>
-		<string>/Users/filippo/dotfiles/mail_backup.sh</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>open</string>
+			<string>-a</string>
+			<string>Terminal</string>
+			<string>/Users/filippo/dotfiles/mail_backup.sh</string>
+		</array>
 		<key>StartCalendarInterval</key>
 		<dict>
 			<key>Hour</key>
