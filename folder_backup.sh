@@ -16,6 +16,12 @@ if test ! -d "/Volumes/Public" ; then
 	echo "Public folder continues to be missing, aborting backup..."
 	exit 1
 else
+
+# Backup important document WIHTOUT DELETING destination
+echo -e "Backup important documents... \n"
+rsync -auhP --exclude=".DS_Store" "${HOME}/Documents/Compleanni/" "/Volumes/Public/Filippo/Casa/compleanni/"
+rsync -auhP --exclude=".DS_Store" "${HOME}/Documents/Banca/" "/Volumes/Public/Filippo/Banca/"
+
 # Backup massCode snippets
 echo -e "Backup massCode snippets... \n"
 rsync -auhP --exclude=backups/ --exclude=".DS_Store" "$HOME/massCode/" "/Volumes/Public/Filippo/dotfiles_backup/massCode/" --delete
