@@ -54,6 +54,9 @@ source app_setup.sh
 # Download syscripts repo in $HOME
 git clone https://github.com/filobolla/syscripts.git "${HOME}"
 
+# Download tmux plugins to config folder
+git clone https://github.com/tmux-plugins/tpm "$DOTFILES_FOLDER/.config/tmux/plugins/tpm"
+
 # Link dotfiles in the HOME folder
 echo -e "Linking dotfiles in the \$HOME folder...\n"
 for file in {.bash_profile,.config,.vimrc,.tmux.conf}; do
