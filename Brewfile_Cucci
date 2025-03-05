@@ -65,6 +65,8 @@ cask "the-unarchiver"
 cask "tunnelblick"
 # Multimedia player
 cask "vlc"
+cask "google-chrome"
+cask "adobe-creative-cloud"
 mas "Apple Configurator", id: 1037126344
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
