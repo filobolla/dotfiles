@@ -221,7 +221,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 
 # Set icon size to 39 pixels
-defaults write com.apple.dock tilesize -int 39
+defaults write com.apple.dock tilesize -int 41
 
 # Enable magnification
 defaults write com.apple.dock magnification -bool true
