@@ -1,0 +1,72 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/core"
+tap "homebrew/services"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Improved top (interactive process viewer)
+brew "htop"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Mac App Store command-line interface
+brew "mas"
+# NCurses Disk Usage
+brew "ncdu"
+# Realtime console network usage monitor
+brew "nload"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Extremely fast tool to remove dupes and other lint from your filesystem
+brew "rmlint"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
+# Internet file retriever
+brew "wget"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
+# Android SDK component
+cask "android-platform-tools"
+# Inspect application bundles
+cask "apparency"
+# Application uninstaller
+cask "appcleaner"
+# Tool to show live information about the batteries in various devices
+cask "coconutbattery"
+# Free and open-source media player
+cask "iina"
+# Keyboard customizer
+cask "karabiner-elements"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
+# Warns about malware, adware and spyware
+cask "malwarebytes"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Office suite
+cask "microsoft-office"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
+# QuickLook generator for Markdown files
+cask "qlmarkdown"
+# Quicklook extension for source files
+cask "syntax-highlight"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Unpacks archive files
+cask "the-unarchiver"
+# Free and open-source OpenVPN client
+cask "tunnelblick"
+# Multimedia player
+cask "vlc"
+mas "Apple Configurator", id: 1037126344
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
